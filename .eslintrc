@@ -1,0 +1,15 @@
+{
+  "extends": "react-app",
+  "rules": {
+    "no-unused-vars": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "react-hooks/rules-of-hooks": "warn"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  }
+}

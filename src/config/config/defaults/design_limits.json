@@ -1,0 +1,14 @@
+{
+  "cornerRadius": {
+    "max": 30,
+    "min": 0
+  },
+  "shadow": {
+    "max": 30,
+    "min": 0
+  },
+  "elevation": {
+    "max": 7,
+    "min": 0
+  }
+}

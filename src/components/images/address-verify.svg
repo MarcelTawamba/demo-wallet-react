@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1279" data-name="Rectangle 1279" width="100" height="100" transform="translate(482 129)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_1161" data-name="Rectangle 1161" width="100" height="100" transform="translate(75.333 62)" fill="#fff" stroke="#707070" stroke-width="0.667"/>
+    </clipPath>
+  </defs>
+  <g id="address-verify" transform="translate(-482 -129)" clip-path="url(#clip-path)">
+    <g id="address" transform="translate(406.667 67)">
+      <g id="Mask_Group_473" data-name="Mask Group 473" clip-path="url(#clip-path-2)">
+        <g id="_01-home" data-name="01-home" transform="translate(74.54 61.207)">
+          <g id="glyph">
+            <path id="Path_61783" data-name="Path 61783" d="M50.794.793A38.933,38.933,0,0,0,11.9,39.683c0,10.417,6.311,23.793,18.757,39.757a211.469,211.469,0,0,0,18.486,20.693,2.381,2.381,0,0,0,3.291,0A211.465,211.465,0,0,0,70.925,79.44C83.372,63.476,89.683,50.1,89.683,39.683A38.933,38.933,0,0,0,50.794.793Zm0,66.667A27.778,27.778,0,1,1,78.572,39.682,27.778,27.778,0,0,1,50.794,67.46Z" fill="#cc2538"/>
+          </g>
+        </g>
+      </g>
+      <path id="Intersection_2" data-name="Intersection 2" d="M3559.667-4081v-33.017q.5.017,1,.018a27.808,27.808,0,0,0,27.777-27.777,27.808,27.808,0,0,0-27.777-27.779q-.5,0-1,.018v-10.8h6.1a38.948,38.948,0,0,1,33.789,38.556c0,10.416-6.311,23.793-18.758,39.756a211.338,211.338,0,0,1-18.486,20.693,2.361,2.361,0,0,1-.428.326Z" transform="translate(-3435.333 4242.667)" opacity="0.2"/>
+    </g>
+    <path id="Path_61958" data-name="Path 61958" d="M521.133,170.127l10.9,9.684,16.1-23.155" transform="translate(-1 2)" fill="none" stroke="#0daf2d" stroke-width="7"/>
+  </g>
+</svg>

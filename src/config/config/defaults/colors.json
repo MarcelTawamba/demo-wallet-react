@@ -1,0 +1,28 @@
+{
+  "primary": "#56E",
+  "secondary": "#EEE",
+  "tertiary": "#EEE",
+  "focus": "#a2a2a2",
+
+  "primaryContrast": "#EEE",
+  "secondaryContrast": "#FFF",
+  "tertiaryContrast": "#444",
+  "focusContrast": "#fff",
+
+  "success": "#2BB292",
+  "warning": "#F47A00",
+  "error": "#FF4C6F",
+  "info": "#4C83FF",
+  "positive": "#2BB292",
+  "negative": "#FF4C6F",
+
+  "grey1": "#EEE",
+  "grey2": "#DDD",
+  "grey3": "#BBC",
+  "grey4": "#797979",
+  "font": "#434343",
+  "fontLight": "#777777",
+  "fontDark": "#222222",
+
+  "placeholderScreen": "#64e1ff"
+}

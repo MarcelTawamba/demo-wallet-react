@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53" height="53" viewBox="0 0 53 53">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_106" data-name="Ellipse 106" cx="26.5" cy="26.5" r="26.5" transform="translate(0 -0.055)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="gbp" transform="translate(0 0.055)" clip-path="url(#clip-path)">
+    <g id="Flag_of_Great_Britain__1707_1800_" data-name="Flag_of_Great_Britain_(1707–1800)" transform="translate(-14.459 0.481)">
+      <rect id="Rectangle_274" data-name="Rectangle 274" width="82.576" height="53.317" fill="#00247d"/>
+      <path id="Path_463" data-name="Path 463" d="M0,0,82.576,53.317M82.576,0,0,53.317" stroke="#fff" stroke-width="5.99"/>
+      <path id="Path_464" data-name="Path 464" d="M41.288,0V53.317M0,26.658H82.576" stroke="#fff" stroke-width="9.984"/>
+      <path id="Path_465" data-name="Path 465" d="M41.288,0V53.317M0,26.658H82.576" stroke="#cf142b" stroke-width="5.99"/>
+    </g>
+  </g>
+</svg>

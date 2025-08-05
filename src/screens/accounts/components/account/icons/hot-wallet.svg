@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="47" viewBox="0 0 47 47">
+  <defs>
+    <clipPath id="clipPath">
+      <rect id="Rectangle_446" data-name="Rectangle 446" width="25" height="25" transform="translate(322 54)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="hot-wallet" transform="translate(-311 -43)">
+    <circle id="Ellipse_129" data-name="Ellipse 129" cx="23.5" cy="23.5" r="23.5" transform="translate(311 43)" fill="#5336ff"/>
+    <g id="Mask_Group_241" data-name="Mask Group 241" clipPath="url(#clipPath)">
+      <g id="whatshot-24px" transform="translate(322 54)">
+        <path id="Path_565" data-name="Path 565" d="M14.062.7a22.389,22.389,0,0,1,.771,5,3.615,3.615,0,0,1-3.552,3.885A3.791,3.791,0,0,1,7.5,5.7l.031-.375a14.342,14.342,0,0,0-3.365,9.26,8.333,8.333,0,1,0,16.667,0A17.828,17.828,0,0,0,14.062.7ZM12.2,19.792a3.308,3.308,0,0,1-3.354-3.271,3.262,3.262,0,0,1,2.927-3.25,8.033,8.033,0,0,0,4.813-2.687,14.535,14.535,0,0,1,.615,4.208,5,5,0,0,1-5,5Z" fill="#fff"/>
+        <path id="Path_566" data-name="Path 566" d="M0,0H25V25H0Z" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

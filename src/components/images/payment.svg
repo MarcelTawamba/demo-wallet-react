@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1346" data-name="Rectangle 1346" width="95" height="95" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clip-payment">
+      <rect width="100" height="100"/>
+    </clipPath>
+  </defs>
+  <g id="payment" clip-path="url(#clip-payment)">
+    <g id="Mask_Group_558" data-name="Mask Group 558" transform="translate(3)" clip-path="url(#clip-path)">
+      <g id="wallet" transform="translate(0 5.937)">
+        <path id="Path_61990" data-name="Path 61990" d="M86.094,30.626H83.125V21.719a2.966,2.966,0,0,0-2.969-2.969H8.906A8.917,8.917,0,0,0,0,27.657V81.094A8.917,8.917,0,0,0,8.906,90H86.094a2.97,2.97,0,0,0,2.969-2.969V33.594A2.966,2.966,0,0,0,86.094,30.626Z" transform="translate(0 -6.875)" fill="#d9192f"/>
+        <path id="Path_61991" data-name="Path 61991" d="M9.219,25H77.5v5.938H9.219a2.969,2.969,0,0,1,0-5.937Z" transform="translate(-0.313 -7.187)" fill="#770d0d" opacity="0.608"/>
+        <path id="Path_61992" data-name="Path 61992" d="M95.469,67.813H77.656a8.91,8.91,0,0,1-8.906-8.906h0A8.906,8.906,0,0,1,77.656,50H95.469a2.97,2.97,0,0,1,2.969,2.969V64.844A2.97,2.97,0,0,1,95.469,67.813Z" transform="translate(-3.438 -8.437)" fill="#9d1119"/>
+      </g>
+    </g>
+    <circle id="Ellipse_211" data-name="Ellipse 211" cx="3.5" cy="3.5" r="3.5" transform="translate(74 53)" fill="#ffc400"/>
+  </g>
+</svg>

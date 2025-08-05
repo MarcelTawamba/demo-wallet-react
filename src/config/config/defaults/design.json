@@ -1,0 +1,65 @@
+{
+  "general": {
+    "shadow": 5,
+    "cornerRadius": 3,
+    "elevation": 2,
+    "layout": "default"
+  },
+  "app": {
+    "surface": false,
+    "tabBarLabels": false
+  },
+  "cards": {
+    "shadow": 8,
+    "actionButtonsType": "text",
+    "cornerRadius": 5,
+    "elevation": 3,
+    "showActions": true,
+    "title": {
+      "layout": "",
+      "titleScale": "h6",
+      "subtitleScale": "subtitle2"
+    }
+  },
+  "popUp": {},
+  "buttons": {
+    "rounded": true,
+    "colour": "primary",
+    "shadow": 10,
+    "elevation": 4,
+    "bold": true
+  },
+  "wallets": {
+    "header": "",
+    "headerActionType": "",
+    "balance": "",
+    "headerColor": "primary",
+    "layout": "material",
+    "showActions": false,
+    "actionButtonsType": "text"
+  },
+  "rewards": {
+    "layout": "rightAction"
+  },
+  "products": {},
+  "orders": {
+    "layout": "rightAction"
+  },
+  "campaigns": {},
+  "settings": {},
+  "contacts": {},
+  "notifications": {
+    "title": {
+      "titleScale": "h4",
+      "subtitleScale": "subtitle1"
+    }
+  },
+  "home": {
+    "header": "wallets",
+    "content": ["notifications"]
+  },
+  "other": {
+    "floatingActionButtons": false,
+    "homeCardLayout": "layout1"
+  }
+}

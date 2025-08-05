@@ -1,0 +1,7 @@
+{
+  "appLoad": true,
+  "security": false,
+  "send": true,
+  "withdraw": true,
+  "updateDetails": false
+}

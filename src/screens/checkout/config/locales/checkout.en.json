@@ -1,0 +1,8 @@
+{
+    "payment_option_scan_to_pay": "Scan to pay",
+    "payment_option_login_to_pay": "Login to pay",
+    "payment_processor_currency": "Currency",
+    "contact_method": "Contact method",
+    "payment_method": "Payment method",
+    "wallet_method": "Wallet method"
+}

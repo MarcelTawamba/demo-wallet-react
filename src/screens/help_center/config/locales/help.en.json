@@ -1,0 +1,45 @@
+{
+  "articles": "Articles",
+  "having_trouble_": "Having trouble?",
+  "search_placeholder": "Search...",
+  "links": "Links",
+
+  "depositing_money": "Depositing money",
+
+  "i_dont_know_how_to_deposit": "I don't know how to deposit",
+  "manual_deposit_md": "## Manual deposit\n\nA manual deposit is depositing funds from your bank via EFT. Follow the steps below to deposit funds to your wallet:\n\n1. On the homescreen, swipe to the currency you wish to deposit to and select the Deposit action. You may have to tap the More button if Deposit is not 1 of the main actions\n2. Open your banking app or online banking to create an EFT to the account details provided",
+  "manual_deposit": "Manual deposit",
+  "manual_deposit_text": "A manual deposit is depositing funds from your bank via EFT. Follow the steps below to deposit funds to your wallet:",
+  "manual_deposit_step_1": "On the homescreen, swipe to the currency you wish to deposit to and select the Deposit action. You may have to tap the More button if Deposit is not 1 of the main actions",
+  "manual_deposit_step_2": "Open your banking app or online banking to create an EFT to the account details provided",
+  "manual_deposit_warning": "Be sure to include the exact reference code by tapping to copy the code.",
+
+  "deposit_not_reflecting": "My deposit is not reflecting",
+  "deposit_not_reflecting_text": "Deposits may take up to 5 business days to reflect once your deposit was successful.",
+  "deposit_not_reflecting_manual": "Once we’ve received your deposit and you’ve used the correct reference number, your deposit will reflect in your wallet after it has been processed.",
+
+  "how_do_i_add_crypto_to_my_wallet": "How do I add crypto to my wallet?",
+  "how_do_i_add_crypto_to_my_wallet_text": "To deposit crypto into your wallet you can either **Exchange** or **Receive** it from another wallet.",
+
+  "add_crypto_exchange_step_0": "To Exchange crypto follow the following steps:",
+  "add_crypto_exchange_step_1": "On the homescreen, swipe to the currency you wish to exchange and select the Exchange action. You may have to tap the More button if it is not 1 of the main actions",
+  "add_crypto_exchange_step_2": "Select the currency you wish to sell and the currency you wish to purchase",
+  "add_crypto_exchange_step_3": "Select the amount you wish to sell",
+  "add_crypto_receive_step_0": "To Receive crypto from another wallet:",
+  "add_crypto_receive_step_1": "On the homescreen, swipe to the currency you wish to exchange and select the Receive action",
+  "add_crypto_receive_step_2": "Scan the QR code from your other wallet to send funds across your wallets or copy your address to your clipboard. You can enter your address in a different wallet to send funds from one wallet to another",
+
+  "how_do_i_add_a_bank_account": "How do I add a bank account?",
+  "how_do_i_add_a_bank_account_steps_0": "To add a new bank account in Deposit do the following:",
+  "how_do_i_add_a_bank_account_steps_1": "On the homescreen, swipe to your USD currency and select the Deposit action. You may have to tap the More button if it is not 1 of the main actions",
+  "how_do_i_add_a_bank_account_steps_2": "In Deposit select the “Add new account” button at the bottom of your screen",
+  "how_do_i_add_a_bank_account_steps_5": "Once you have selected your bank, please provide your banking credentials to enable Plaid to retrieve your financial information. This will link your bank account to the wallet",
+  "how_do_i_add_a_bank_account_steps_6": "Select your account  retrieved by Plaid and continue to the app. This will link your bank account to the wallet",
+  "how_do_i_add_a_bank_account_conclusiokn": "Your bank account will now show on your list of linked accounts.",
+
+  "withdrawing_money": "Withdrawing money",
+  "i_dont_know_how_to_withdraw": "I don't know how to withdraw",
+
+  "manual_withdraw": "Manual withdrawal",
+  "manual_withdraw_text": "After withdrawing funds, your withdrawal will go into a pending state. The administrator will attempt to manually add your account as a beneficiary and make the withdrawal."
+}

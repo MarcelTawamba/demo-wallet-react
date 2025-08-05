@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <clipPath id="clip-no-bank">
+      <rect width="500" height="500"/>
+    </clipPath>
+  </defs>
+  <g id="no-bank" clip-path="url(#clip-no-bank)">
+    <g id="Path_85" data-name="Path 85" fill="#fff">
+      <path d="M500,500h0Z" stroke="none"/>
+      <path d="M 0 500 L 500 500 L 0 500 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Group_27" data-name="Group 27" transform="matrix(0.914, -0.407, 0.407, 0.914, -143.888, 1.231)">
+      <path id="secondary" d="M28.364,0H170.593l-9.865,55.159L185,86.578,166.361,128.4l11.938,40.43L160.728,200H28.364C12.7,200,0,186.045,0,168.831V31.169C0,13.955,12.7,0,28.364,0Z" transform="translate(67.621 217.554)" fill="#bebebe"/>
+      <path id="Path_15" data-name="Path 15" d="M0,0,161.779.043l-1.656,11.571,12.259,15.495L0,28Z" transform="translate(68 261.845)" opacity="0.323"/>
+      <circle id="Ellipse_3" data-name="Ellipse 3" cx="19" cy="19" r="19" transform="translate(83 366)" fill="#fff" opacity="0.7"/>
+      <circle id="Ellipse_7" data-name="Ellipse 7" cx="19" cy="19" r="19" transform="translate(110.313 366.119)" fill="#fff" opacity="0.7"/>
+    </g>
+    <g id="Group_26" data-name="Group 26" transform="matrix(0.921, 0.391, -0.391, 0.921, 176.741, -114.827)">
+      <path id="secondary-2" data-name="secondary" d="M156.636,205H14.407l9.865-56.538L0,116.257,18.639,73.389,6.7,31.948,24.272,0H156.636C172.3,0,185,14.3,185,31.948v141.1C185,190.7,172.3,205,156.636,205Z" transform="translate(232.621 217.554)" fill="#bebebe"/>
+      <path id="Path_16" data-name="Path 16" d="M5.582-2.465,180.242,0V28L14.778,27.763,12.684,22.83Z" transform="translate(237 263.097)" opacity="0.323"/>
+      <rect id="Rectangle_14" data-name="Rectangle 14" width="54" height="9" rx="4.5" transform="translate(349.242 397)" fill="#fff" opacity="0.8"/>
+      <rect id="Rectangle_37" data-name="Rectangle 37" width="107" height="9" rx="4.5" transform="translate(298.552 374.292)" fill="#fff" opacity="0.8"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="159" height="116" viewBox="0 0 159 116">
+  <g id="mtn-gray" transform="translate(1255 -925)">
+    <rect id="Rectangle_418" data-name="Rectangle 418" width="159" height="116" rx="13" transform="translate(-1255 925)" fill="#f8f8f8"/>
+    <g id="Group_442" data-name="Group 442">
+      <g id="MTN_Converted_" data-name="MTN [Converted]" transform="translate(-1220 938)">
+        <rect id="Rectangle_421" data-name="Rectangle 421" width="90" height="90" fill="none"/>
+        <path id="Path_627" data-name="Path 627" d="M680.859,1079.06c0-9,18.707-16.292,41.759-16.292s41.734,7.295,41.734,16.292-18.681,16.394-41.734,16.394S680.859,1088.057,680.859,1079.06Z" transform="translate(-677.58 -1034.072)" fill="#6d6e71"/>
+        <path id="Path_628" data-name="Path 628" d="M680.859,1079.06c0-9,18.707-16.292,41.759-16.292s41.734,7.295,41.734,16.292-18.681,16.394-41.734,16.394S680.859,1088.057,680.859,1079.06Z" transform="translate(-677.58 -1034.072)" fill="none" stroke="#006892" stroke-miterlimit="3.86" stroke-width="0.127"/>
+        <path id="Path_629" data-name="Path 629" d="M18.579,52.892,22.9,36.727h6.837v9.506h.051l4.651-9.506h6.939L37.032,52.892h-4.5l2.77-10.37h-.051l-5.515,10.37H26.128V42.522h-.076l-2.77,10.37Z" fill="#fff" fill-rule="evenodd"/>
+        <path id="Path_630" data-name="Path 630" d="M42.6,53.2l.61-2.287H48.19L47.58,53.2Z" fill="#9d9d9d" fill-rule="evenodd"/>
+        <path id="Path_631" data-name="Path 631" d="M43.386,50.274l2.516-9.4H41.378L42.5,36.727h14.03L55.408,40.87H50.884l-2.516,9.4Z" fill="#ccc" fill-rule="evenodd"/>
+        <path id="Path_632" data-name="Path 632" d="M53.3,52.892l4.346-16.165h4.88l2.211,8.642h.051L67.1,36.727h4.524L67.3,52.892H62.626l-2.389-8.845h-.051l-2.364,8.845Z" fill="#fff" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_485" data-name="Rectangle 485" width="50" height="50" transform="translate(5978.145 -20)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="mastercard" transform="translate(-5968 30)">
+    <rect id="Rectangle_482" data-name="Rectangle 482" width="60" height="60" rx="30" transform="translate(5968 -30)" fill="#fff"/>
+    <g id="Mask_Group_277" data-name="Mask Group 277" transform="translate(-5.145 -5)" clip-path="url(#clip-path)">
+      <g id="mc_symbol" transform="translate(5977.983 -11.52)">
+        <g id="Group_270" data-name="Group 270" opacity="0">
+          <rect id="Rectangle_486" data-name="Rectangle 486" width="50.161" height="33.127" fill="#fff"/>
+        </g>
+        <rect id="Rectangle_487" data-name="Rectangle 487" width="13.232" height="21.58" transform="translate(18.466 5.772)" fill="#ff5f00"/>
+        <path id="Path_570" data-name="Path 570" d="M19.253,15.991A13.693,13.693,0,0,1,24.5,5.2a13.733,13.733,0,1,0,0,21.58,13.693,13.693,0,0,1-5.249-10.792Z" transform="translate(0.576 0.572)" fill="#eb001b"/>
+        <path id="Path_571" data-name="Path 571" d="M36.738,20.127v-.442h.191v-.091h-.454v.091h.179v.442Zm.882,0v-.534h-.137l-.16.381-.16-.381h-.137v.534h.1v-.4l.149.347h.1l.149-.347v.4Z" transform="translate(9.266 4.941)" fill="#f79e1b"/>
+        <path id="Path_572" data-name="Path 572" d="M42.237,15.992A13.745,13.745,0,0,1,20,26.781,13.711,13.711,0,0,0,20,5.2,13.745,13.745,0,0,1,42.237,15.988Z" transform="translate(5.08 0.571)" fill="#f79e1b"/>
+      </g>
+    </g>
+  </g>
+</svg>

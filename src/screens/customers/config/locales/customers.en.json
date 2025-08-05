@@ -1,0 +1,10 @@
+{
+  "customers": "Customers",
+  "new_customer": "New customer",
+  "add_customer": "Add customer",
+  "customer_information": "Customer information",
+  "add_customer_warning": "Adding customers is not yet available until your business is verified. You will get an email notification once your business account has been approved.",
+  "send_emails_to": "Send emails to",
+  "billing": "Billing",
+  "no_customers": "No customers"
+}

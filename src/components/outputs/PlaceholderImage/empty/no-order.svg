@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <clipPath id="clip-No-order">
+      <rect width="500" height="500"/>
+    </clipPath>
+  </defs>
+  <g id="No-order" clip-path="url(#clip-No-order)">
+    <rect id="Rectangle_42" data-name="Rectangle 42" width="286" height="344" rx="26" transform="translate(107 78)" fill="#f2f2f2"/>
+    <circle id="Ellipse_9" data-name="Ellipse 9" cx="25" cy="25" r="25" transform="translate(135 128)" fill="#959595"/>
+    <circle id="Ellipse_10" data-name="Ellipse 10" cx="25" cy="25" r="25" transform="translate(135 225)" fill="#959595"/>
+    <circle id="Ellipse_11" data-name="Ellipse 11" cx="25" cy="25" r="25" transform="translate(135 322)" fill="#959595"/>
+    <rect id="Rectangle_43" data-name="Rectangle 43" width="85" height="16" rx="8" transform="translate(213 128)" fill="#bfbfbf"/>
+    <rect id="Rectangle_46" data-name="Rectangle 46" width="85" height="16" rx="8" transform="translate(213 259)" fill="#bfbfbf"/>
+    <rect id="Rectangle_48" data-name="Rectangle 48" width="85" height="16" rx="8" transform="translate(213 322)" fill="#bfbfbf"/>
+    <rect id="Rectangle_44" data-name="Rectangle 44" width="144" height="16" rx="8" transform="translate(213 162)" fill="#bfbfbf"/>
+    <rect id="Rectangle_45" data-name="Rectangle 45" width="144" height="16" rx="8" transform="translate(213 225)" fill="#bfbfbf"/>
+    <rect id="Rectangle_47" data-name="Rectangle 47" width="144" height="16" rx="8" transform="translate(213 356)" fill="#bfbfbf"/>
+  </g>
+</svg>

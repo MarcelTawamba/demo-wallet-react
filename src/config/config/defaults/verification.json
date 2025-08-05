@@ -1,0 +1,5 @@
+{
+  "requireDocumentID": true,
+  "requireDocumentAddress": true,
+  "requireDocumentAdvID": true
+}

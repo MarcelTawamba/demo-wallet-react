@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="150" viewBox="0 0 150 150">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1236" data-name="Rectangle 1236" width="150" height="150" transform="translate(113 75)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="bank" transform="translate(-113 -75)">
+    <g id="Mask_Group_499" data-name="Mask Group 499" clip-path="url(#clip-path)">
+      <g id="museum" transform="translate(113 75)">
+        <path id="Path_61835" data-name="Path 61835" d="M33.86,138.281H16.283V61.038H33.86Zm0,0" fill="#848484"/>
+        <path id="Path_61836" data-name="Path 61836" d="M67.146,138.281H49.568V61.038H67.146Zm0,0" fill="#848484"/>
+        <path id="Path_61837" data-name="Path 61837" d="M100.432,138.281H82.854V61.038h17.578Zm0,0" fill="#848484"/>
+        <path id="Path_61838" data-name="Path 61838" d="M133.717,138.281H116.14V61.038h17.577Zm0,0" fill="#848484"/>
+        <path id="Path_61839" data-name="Path 61839" d="M135.183,69.827H14.818a4.394,4.394,0,0,1-4.395-4.395V47.856a4.394,4.394,0,0,1,4.395-4.395H135.183a4.395,4.395,0,0,1,4.395,4.395V65.433A4.395,4.395,0,0,1,135.183,69.827Zm0,0" fill="#cecece"/>
+        <path id="Path_61841" data-name="Path 61841" d="M145.6,150H4.4A4.394,4.394,0,0,1,0,145.605V133.887A4.394,4.394,0,0,1,4.4,129.492H145.6A4.394,4.394,0,0,1,150,133.887v11.719A4.394,4.394,0,0,1,145.6,150Zm0,0" fill="#cecece"/>
+        <path id="Path_61843" data-name="Path 61843" d="M145.605,47.855H4.395L75,4.395Zm0,0" fill="#cecece"/>
+        <path id="Path_61845" data-name="Path 61845" d="M145.605,52.249H4.395a4.395,4.395,0,0,1-2.3-8.137L72.7.652a4.394,4.394,0,0,1,4.607,0l70.605,43.46a4.394,4.394,0,0,1-2.3,8.137ZM19.917,43.46H130.083L75,9.555Zm0,0" fill="#e6e6e6"/>
+        <path id="Path_61847" data-name="Path 61847" d="M77.988,34.637H72.012a4.395,4.395,0,1,1,0-8.789h5.976a4.395,4.395,0,1,1,0,8.789Zm0,0" fill="#848484"/>
+      </g>
+    </g>
+    <path id="Intersection_4" data-name="Intersection 4" d="M4896.5-11781.5v-20.01h7.354v-59.665H4896.5v-69.326h1.536c.089.048.179.1.266.152l70.605,43.46a4.406,4.406,0,0,1,1.59,1.7v4.081a4.4,4.4,0,0,1-3.893,2.354h-6.03v13.184a4.393,4.393,0,0,1-4.392,4.395h-1.467v59.665H4966.6a4.4,4.4,0,0,1,3.9,2.356v15.794a4.424,4.424,0,0,1-1.859,1.859Zm24.929-20.01h15.71v-59.665h-15.71Z" transform="translate(-4708 12006)" opacity="0.1"/>
+  </g>
+</svg>

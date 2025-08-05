@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="150" viewBox="0 0 150 150">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1156" data-name="Rectangle 1156" width="100" height="100" transform="translate(25 25)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-Email">
+      <rect width="150" height="150"/>
+    </clipPath>
+  </defs>
+  <g id="Email" clip-path="url(#clip-Email)">
+    <circle id="Ellipse_181" data-name="Ellipse 181" cx="75" cy="75" r="75" fill="#e6e6e6"/>
+    <g id="Mask_Group_462" data-name="Mask Group 462" clip-path="url(#clip-path)">
+      <g id="mail_1_" data-name="mail (1)" transform="translate(25 25)">
+        <g id="Group_821" data-name="Group 821">
+          <g id="Group_820" data-name="Group 820">
+            <path id="Path_61767" data-name="Path 61767" d="M96.429,14.286H3.571L50,52.529,96.954,14.393A3.231,3.231,0,0,0,96.429,14.286Z" fill="#9d9d9d"/>
+          </g>
+        </g>
+        <g id="Group_823" data-name="Group 823">
+          <g id="Group_822" data-name="Group 822">
+            <path id="Path_61768" data-name="Path 61768" d="M52.253,59.914a3.571,3.571,0,0,1-4.525,0L0,20.593v61.55a3.571,3.571,0,0,0,3.571,3.571H96.429A3.571,3.571,0,0,0,100,82.143V21.121Z" fill="#9d9d9d"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

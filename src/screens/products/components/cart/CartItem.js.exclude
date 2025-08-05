@@ -1,0 +1,75 @@
+import React, { useRef } from 'react';
+import { formatAmountString } from 'util/rates';
+import { View } from 'components/layout/View';
+import Images from 'components/images';
+import Image from 'components/outputs/Image';
+import Text from 'components/outputs/Text';
+import { formatVariantsString } from 'util/products';
+import { Button } from 'components/inputs/Button';
+
+const IMAGE_SIZE = 120;
+
+export default function CartListItem(props) {
+  let { item, currency, removeFromCart, cart, loadingItem } = props;
+  let { name, price, prices, quantity, status, variant, image, id } = item;
+  const updateRef = useRef();
+
+  if (!price && prices && currency) {
+    price = prices.find(price => price.currency.code === currency.code);
+  }
+  const priceString = price
+    ? formatAmountString(price?.amount ?? price, currency ?? {}, true)
+    : 'N/A';
+
+  const isLoading = loadingItem === id;
+
+  return (
+    <View fD="row" w={'100%'} p={1}>
+      <View style={{ position: 'relative' }} w={IMAGE_SIZE} pr={1}>
+        {/* <SkeletonPlaceholder>
+            <SkeletonPlaceholder.Item width={IMAGE_SIZE} height={IMAGE_SIZE} />
+          </SkeletonPlaceholder> */}
+        <View pos="absolute" bC="white">
+          {image ? (
+            <Image
+              src={image}
+              // source={{ uri: image }}
+              style={{
+                height: IMAGE_SIZE,
+                width: IMAGE_SIZE,
+                minHeight: IMAGE_SIZE,
+                minWidth: IMAGE_SIZE,
+              }}
+            />
+          ) : (
+            <Images name="product" height={IMAGE_SIZE} width={IMAGE_SIZE} />
+          )}
+        </View>
+      </View>
+      <View
+        ph={0.5}
+        fD="column"
+        style={{ display: 'flex', flex: 1 }}
+        aI="space-between"
+        jC="space-between"
+        h="100%">
+        <div>
+          <Text style={{ paddingBottom: 4, fontSize: 18 }}>{name}</Text>
+          {Boolean(variant) && (
+            <Text variant="body2" c="fontLight">
+              {variant.label
+                ? variant.label
+                : formatVariantsString(variant.options)}
+            </Text>
+          )}
+
+          <Text style={{ fontSize: 18 }} bold>
+            {priceString}
+          </Text>
+        </div>
+        <Button variant="link" label="Remove" color="##5336FF" />
+      </View>
+      {/* <QuantityEdit {...props} loading={isLoading} /> */}
+    </View>
+  );
+}

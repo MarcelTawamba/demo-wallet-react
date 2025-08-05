@@ -1,0 +1,12 @@
+{
+  "locales": {
+    "en": {
+      "faqs_title": "Frequently asked questions",
+      "faqs_description": "",
+      "support_title": "Support",
+      "support_description": "",
+      "about_title": "About",
+      "about_description": ""
+    }
+  }
+}

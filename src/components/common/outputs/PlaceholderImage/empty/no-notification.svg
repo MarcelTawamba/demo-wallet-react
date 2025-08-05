@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_35" data-name="Rectangle 35" width="350" height="350" transform="translate(73 63)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-no-notifications">
+      <rect width="500" height="500"/>
+    </clipPath>
+  </defs>
+  <g id="no-notifications" clip-path="url(#clip-no-notifications)">
+    <g id="Mask_Group_20" data-name="Mask Group 20" clip-path="url(#clip-path)">
+      <g id="bell" transform="translate(97.412 63)">
+        <path id="Path_78" data-name="Path 78" d="M175.772,309.073A40.994,40.994,0,1,0,134.777,350,40.96,40.96,0,0,0,175.772,309.073Zm0,0" fill="#cbcbcb"/>
+        <path id="Path_79" data-name="Path 79" d="M134.777,268.145a41.013,41.013,0,0,0-11.915,1.762,40.914,40.914,0,0,1,0,78.33,40.941,40.941,0,1,0,11.915-80.093Zm0,0" fill="#adadad"/>
+        <path id="Path_80" data-name="Path 80" d="M139.568,70.2a24.276,24.276,0,1,1,19.047-28.58A24.312,24.312,0,0,1,139.568,70.2Zm0,0" fill="#cbcbcb"/>
+        <path id="Path_81" data-name="Path 81" d="M158.615,41.624a24.313,24.313,0,0,0-28.628-19.018,24.843,24.843,0,0,0-3.549.993,24.266,24.266,0,0,1,0,45.611,24.312,24.312,0,0,0,32.174-27.587Zm0,0" fill="#adadad"/>
+        <path id="Path_82" data-name="Path 82" d="M236.312,302.223H33.242a32.952,32.952,0,0,1-20.518-58.7l6.524-5.255a63.965,63.965,0,0,0,23.864-49.82V153.934a92.365,92.365,0,0,1,184.731,0v35.157a63.966,63.966,0,0,0,23.055,49.16l6.353,5.287a33.19,33.19,0,0,1,11.963,25.509v.331A32.872,32.872,0,0,1,236.312,302.223Zm0,0" fill="#d5d5d5"/>
+        <path id="Path_83" data-name="Path 83" d="M257.25,243.538l-6.353-5.287a63.971,63.971,0,0,1-23.055-49.163V153.931a92.432,92.432,0,0,0-118.39-88.5,92.269,92.269,0,0,1,66.341,88.5v35.157a63.971,63.971,0,0,0,23.055,49.163l6.355,5.287a33.2,33.2,0,0,1,11.963,25.509v.331a32.872,32.872,0,0,1-32.9,32.845h52.049a32.872,32.872,0,0,0,32.9-32.845v-.331A33.19,33.19,0,0,0,257.25,243.538Zm0,0" fill="#adadad"/>
+        <path id="Path_84" data-name="Path 84" d="M300.835,79.145a79.274,79.274,0,1,0-79.273,79.145A79.209,79.209,0,0,0,300.835,79.145Zm0,0" fill="#727272"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,347 @@
+import React, { useState, useEffect, useMemo } from 'react';
+import { Form } from 'formik';
+
+import { makeStyles } from '@material-ui/styles';
+import { Box } from '@material-ui/core';
+import EmptyListMessage from 'components/lists/EmptyListMessage';
+import IconButton from 'components/inputs/IconButton';
+import { useSelector } from 'react-redux';
+import {
+  userBankAccountsSelector,
+  cryptoAccountsSelector,
+} from 'redux/rehive/selectors';
+import { walletsSelector } from 'screens/accounts/redux/selectors';
+import Selector from 'components/inputs/Selector';
+import {
+  concatBankAccount,
+  standardizeString,
+  concatCryptoAccount,
+  objectToArray,
+  sum,
+} from 'util/general';
+import TextField from 'components/inputs/TextField';
+import Info from 'components/outputs/Info';
+// import { Button } from 'components/inputs/Button';
+// import Modal from 'components/layout/Modal';
+// import AccountForm from '../AccountForm';
+
+const payoutTypes = [
+  {
+    value: 'native',
+    label: 'Account',
+  },
+  {
+    value: 'bank',
+    label: 'Bank account',
+  },
+  {
+    value: 'bitcoin',
+    label: 'Bitcoin',
+  },
+];
+
+// const modalConfig = {
+//   bank: {
+//     title: ' bank account',
+//     // value: item => concatAddress(item),
+//     // setValue: item => item,
+//   },
+//   bitcoin: {
+//     title: ' bitcoin account',
+//     // value: item => concatAddress(item),
+//     // setValue: item => item,
+//   },
+// };
+const defaultDestination = {
+  type: 'bank',
+  percentage: 100,
+  destination: '',
+  currency: '',
+};
+
+export default function PayoutDestinations(props) {
+  const { activeSection, formikProps } = props;
+  const { initialValues, setFieldValue } = formikProps;
+  const { destinations = [] } = initialValues;
+  const temp = destinations.map(item => ({
+    ...item,
+    currency: item?.currency?.code ?? item?.currency ?? '',
+  }));
+  const [items, setItems] = useState(temp);
+  const [index, setIndex] = useState(destinations?.length ?? 0);
+
+  const [modal, setModal] = useState('');
+
+  const bankAccounts = useSelector(userBankAccountsSelector);
+  const cryptoAccounts = useSelector(cryptoAccountsSelector);
+  const accounts = useSelector(walletsSelector);
+
+  const data = {
+    bank: bankAccounts?.items?.map(item => ({
+      value: item?.id,
+      label: concatBankAccount(item),
+      currencies: item?.currencies,
+    })),
+    bitcoin: cryptoAccounts?.items
+      ?.filter(item => item.crypto_type === 'bitcoin')
+      ?.map(item => ({
+        value: item?.id,
+        label: concatCryptoAccount(item),
+        currencies: [item?.network === 'testnet' ? 'TXBT' : 'XBT'],
+      })),
+    native: objectToArray(accounts?.accounts)
+      ?.filter(item => item.name !== 'sales')
+      ?.map(item => ({
+        value: item?.reference,
+        label: item.label ?? standardizeString(item?.name),
+        currencies: item?.keys,
+      })),
+  };
+
+  function handleItem(i, item) {
+    let newItems = [...items];
+    if (i > newItems.length) {
+      newItems.push(item);
+    } else {
+      newItems[i] = item;
+    }
+    setItems(newItems);
+  }
+  function handleRemove(i) {
+    let newItems = [...items];
+    delete newItems.splice(i, 1);
+    setIndex(index - 1);
+    setItems(newItems);
+  }
+
+  useEffect(() => {
+    setFieldValue('destinations', items);
+  }, [items]);
+
+  useEffect(() => {
+    if (items?.length !== destinations?.length) {
+      const temp = destinations.map(item => ({
+        ...item,
+        currency: item?.currency?.code ?? item?.currency ?? '',
+      }));
+      setItems(temp);
+      setIndex(destinations?.length ?? 0);
+    }
+  }, [destinations]);
+
+  const percentageTotal = useMemo(() => sum(items, 'percentage'), [items]);
+  const percentageValid = items?.length > 0 && percentageTotal !== 100;
+
+  return (
+    <Form>
+      {items.length > 0 ? (
+        items.map((destination, i) => (
+          <PayoutDestination
+            value={destination}
+            key={`destinations.${i}`}
+            name={`destinations.${i}`}
+            formikProps={formikProps}
+            onItemChange={item => handleItem(i, item, formikProps)}
+            onItemRemove={() => handleRemove(i)}
+            data={data}
+            setModal={setModal}
+          />
+        ))
+      ) : (
+        <EmptyListMessage>No destinations added</EmptyListMessage>
+      )}
+      {percentageValid && (
+        <Info mt={2} noMargin variant="warning">
+          Sum of percentages must be equal to 100, current total:{' '}
+          {percentageTotal}
+        </Info>
+      )}
+
+      <Box pt={percentageValid ? 2 : 1} style={{ textAlign: 'right' }}>
+        <IconButton
+          icon={'add'}
+          noPadding
+          // onPress={() => setIndex(index + 1)}
+          onPress={() => handleItem(items.length, defaultDestination)}
+        />
+      </Box>
+      {/* <Modal
+        close
+        title={'Add' + modalConfig?.[modal]?.title}
+        maxWidth={500}
+        open={Boolean(modal)}
+        onDismiss={() => {
+          setModal('');
+        }}>
+        <AccountForm type={modal} />
+      </Modal> */}
+    </Form>
+  );
+}
+
+function PayoutDestination(props) {
+  const { data, onItemChange, onItemRemove, setModal, value } = props;
+  const [type, setType] = useState(value?.type ?? payoutTypes?.[0]?.value);
+  const [percentage, setPercentage] = useState(value?.percentage ?? '100');
+  const classes = useStyles();
+  const destinationOptions = useMemo(() => data?.[type], [type]);
+
+  const [destination, setDestination] = useState(
+    value?.account
+      ? value?.account
+      : value?.bank_account
+      ? value?.bank_account
+      : value?.bitcoin_account
+      ? value?.bitcoin_account
+      : destinationOptions?.[0]?.value ?? '',
+  );
+
+  const currencies = useMemo(
+    () =>
+      (
+        destinationOptions.find(
+          item => item.value.toString() === destination.toString(),
+        )?.currencies ?? []
+      ).map(item => ({ value: item?.code ?? item, label: item?.code ?? item })),
+    [destinationOptions],
+  );
+
+  const [currency, setCurrency] = useState(
+    value?.currency ?? currencies?.[0]?.value ?? '',
+  );
+
+  useEffect(() => {
+    setCurrency(currencies?.[0]?.value ?? '');
+  }, [currencies]);
+
+  useEffect(() => {
+    if (value?.currency) {
+      setCurrency(value?.currency);
+    }
+  }, [value]);
+
+  function handleTypeChange(value) {
+    setType(value);
+    const newDestination = data?.[value]?.[0];
+    setDestination(newDestination?.value ?? '');
+    const tempCurrency = newDestination?.currencies?.[0];
+    setCurrency(tempCurrency?.code ?? tempCurrency ?? '');
+  }
+
+  useEffect(() => {
+    let newDestination = {
+      account: '',
+      bitcoin_account: '',
+      bank_account: '',
+      type,
+      percentage: parseFloat(percentage),
+      currency,
+    };
+    if (type === 'bank') {
+      newDestination.bank_account = destination;
+    } else if (type === 'bitcoin') {
+      newDestination.bitcoin_account = destination;
+    } else if (type === 'native') {
+      newDestination.account = destination;
+    }
+    onItemChange(newDestination);
+  }, [destination, type, percentage, currency]);
+
+  return (
+    <div className={classes.item}>
+      <div className={classes.row}>
+        <Selector
+          items={payoutTypes}
+          value={type}
+          label={'Payout type'}
+          onValueChange={handleTypeChange}
+        />
+        <div className={classes.right}>
+          <TextField
+            margin="dense"
+            autoComplete="off"
+            variant="standard"
+            label="Percentage"
+            value={percentage}
+            onChange={e => setPercentage(e.target.value)}
+            type="number"
+          />
+          <Box style={{ right: -4, position: 'relative' }}>
+            <IconButton
+              icon={'minus'}
+              noPadding
+              inverted
+              color="error"
+              size={14}
+              onPress={onItemRemove}
+            />
+          </Box>
+        </div>
+      </div>
+
+      <div className={classes.row}>
+        <div className={classes.left}>
+          <Selector
+            items={destinationOptions}
+            value={destination}
+            label={'Destination'}
+            onValueChange={setDestination}
+            emptyListMessage={'No ' + type + ' accounts'}
+          />
+        </div>
+
+        <div className={classes.right}>
+          {type !== 'bitcoin' && (
+            <Selector
+              items={currencies}
+              value={currency}
+              label={'Currency'}
+              onValueChange={setCurrency}
+              emptyListMessage={'No currencies'}
+            />
+          )}
+        </div>
+      </div>
+      {/* {type !== 'native' && (
+        <Button
+          id={'add_' + type + '_account'}
+          noPadding
+          variant="link"
+          color="primary"
+          onPress={() => setModal(type)}
+        />
+      )} */}
+    </div>
+  );
+}
+
+const useStyles = makeStyles(theme => ({
+  item: {
+    borderRadius: 10,
+    padding: theme.spacing(2),
+    paddingTop: theme.spacing(1),
+    marginBottom: theme.spacing(1),
+    marginTop: theme.spacing(2),
+    border: '1px solid #EFEFEF',
+    width: '100%',
+    boxSizing: 'border-box',
+  },
+  row: {
+    display: 'flex',
+    flexDirection: 'row',
+    width: '100%',
+    alignItems: 'center',
+    height: 64,
+  },
+  left: {
+    width: '100%',
+    maxWidth: 251,
+  },
+  right: {
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'row',
+    paddingLeft: theme.spacing(2),
+    maxWidth: 160,
+  },
+}));

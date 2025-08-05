@@ -1,0 +1,13 @@
+{
+  "team": "Team",
+  "manager": "Manager",
+  "no_managers": "No managers",
+  "manager_delete_success": "Manager deleted successfully",
+  "manager_delete_error": "Manager deletion error",
+  "add_new_manager": "Add new manager",
+  "manager_information": "Manager information",
+  "invite_new_team_member": "Invite new team member",
+  "add_and_manage_team": "Add and manage your team members",
+  "add_manager_description": "Inviting a manager will either send them an email to create an account or add the manager to the business if they already have an account",
+  "add_manager_require_business_verification": "Adding managers is not yet available until your business is verified. You will get an email notification once your business account has been approved."
+}

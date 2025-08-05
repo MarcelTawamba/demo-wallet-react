@@ -1,0 +1,7 @@
+{
+  "hideID": false,
+  "labelID": "",
+  "addressTypes": ["permanent", "shipping", "billing"],
+  "referral": { "enabled": false },
+  "documents": { "hide": false }
+}

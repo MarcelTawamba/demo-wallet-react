@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <clipPath id="clip-_404">
+      <rect width="500" height="500"/>
+    </clipPath>
+  </defs>
+  <g id="_404" data-name="404" clip-path="url(#clip-_404)">
+    <rect id="Rectangle_2439" data-name="Rectangle 2439" width="374" height="267" rx="26" transform="translate(105 183)" fill="#ffd6d6"/>
+    <g id="Group_10575" data-name="Group 10575" transform="translate(-27 -6)">
+      <g id="Rectangle_2438" data-name="Rectangle 2438" transform="translate(49 56)" fill="none" stroke="#2b2b2b" stroke-width="16">
+        <rect width="374" height="267" rx="26" stroke="none"/>
+        <rect x="8" y="8" width="358" height="251" rx="18" fill="none"/>
+      </g>
+      <path id="Path_62532" data-name="Path 62532" d="M229,8310.978H601.84" transform="translate(-180 -8208)" fill="none" stroke="#2b2b2b" stroke-width="16"/>
+      <circle id="Ellipse_1117" data-name="Ellipse 1117" cx="5" cy="5" r="5" transform="translate(73 80)" fill="#2b2b2b"/>
+      <circle id="Ellipse_1118" data-name="Ellipse 1118" cx="5" cy="5" r="5" transform="translate(97 80)" fill="#2b2b2b"/>
+      <circle id="Ellipse_1119" data-name="Ellipse 1119" cx="5" cy="5" r="5" transform="translate(121 80)" fill="#2b2b2b"/>
+      <path id="Path_62533" data-name="Path 62533" d="M57.256,0H77.365V-18.5h13.2V-35.4h-13.2v-65.355H47.83q-4.05,6.214-8.1,12.6t-8.1,12.917q-4.05,6.529-8.03,13.2T15.71-48.633Q11.8-41.895,7.96-35.052V-18.5h49.3ZM26.882-35.959q2.723-4.888,5.656-9.88t5.935-9.985q3-4.992,6.075-9.95t6.075-9.706q3-4.748,6-9.287h1.117v49.924H26.882Zm114.3,38.543q12.5,0,21.471-6.319t13.755-18.189q4.783-11.87,4.783-28.558t-4.853-28.523q-4.853-11.835-13.79-18.084t-21.366-6.249q-12.359,0-21.366,6.249t-13.825,18.05q-4.818,11.8-4.818,28.488t4.818,28.593q4.818,11.905,13.755,18.224T141.185,2.583Zm0-16.688a13.726,13.726,0,0,1-9.915-4.085q-4.189-4.085-6.459-12.184a76.074,76.074,0,0,1-2.269-20.179,74.956,74.956,0,0,1,2.269-20.04q2.269-8.03,6.459-12.045a13.849,13.849,0,0,1,9.915-4.015,13.813,13.813,0,0,1,9.95,4.015q4.155,4.015,6.424,12.01t2.269,20.074a76.074,76.074,0,0,1-2.269,20.179q-2.269,8.1-6.424,12.184A13.691,13.691,0,0,1,141.185-14.1ZM243.268,0h20.109V-18.5h13.2V-35.4h-13.2v-65.355H233.841q-4.05,6.214-8.1,12.6t-8.1,12.917q-4.05,6.529-8.03,13.2t-7.89,13.406q-3.91,6.738-7.75,13.581V-18.5h49.3ZM212.894-35.959q2.723-4.888,5.656-9.88t5.935-9.985q3-4.992,6.075-9.95t6.075-9.706q3-4.748,6-9.287h1.117v49.924H212.894Z" transform="translate(93.733 257)" fill="#2b2b2b"/>
+    </g>
+  </g>
+</svg>

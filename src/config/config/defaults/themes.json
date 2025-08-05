@@ -1,0 +1,22 @@
+{
+  "default": {
+    "header": "white",
+    "headerContrast": "primary",
+    "authScreen": "white",
+    "authScreenContrast": "primary",
+    "surface": "white",
+    "surfaceInput": "white",
+    "surfaceCard": "white",
+    "surfaceRear": "grey2",
+    "tabNavigator": "grey1",
+    "tabNavigatorInactive": "font",
+    "tabNavigatorActive": "primary"
+  },
+  "dark": {
+    "header": "primary",
+    "headerContrast": "primaryContrast",
+    "authScreen": "white",
+    "authScreenContrast": "primary",
+    "surfaceInput": "grey1"
+  }
+}

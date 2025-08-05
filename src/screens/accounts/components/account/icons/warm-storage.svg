@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="47" viewBox="0 0 47 47">
+  <defs>
+    <clipPath id="clipPath">
+      <rect id="Rectangle_445" data-name="Rectangle 445" width="25" height="25" transform="translate(322 54)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="warm-storage" transform="translate(-311 -43)">
+    <circle id="Ellipse_129" data-name="Ellipse 129" cx="23.5" cy="23.5" r="23.5" transform="translate(311 43)" fill="#5336ff"/>
+    <g id="Mask_Group_238" data-name="Mask Group 238" clipPath="url(#clipPath)">
+      <g id="lock_open-24px" transform="translate(322 54)">
+        <path id="Path_558" data-name="Path 558" d="M0,0H25V25H0Z" fill="none"/>
+        <path id="Path_559" data-name="Path 559" d="M18.75,8.333H17.708V6.25a5.208,5.208,0,1,0-10.417,0H9.375a3.125,3.125,0,1,1,6.25,0V8.333H6.25a2.089,2.089,0,0,0-2.083,2.083V20.833A2.089,2.089,0,0,0,6.25,22.917h12.5a2.089,2.089,0,0,0,2.083-2.083V10.417A2.089,2.089,0,0,0,18.75,8.333Zm0,12.5H6.25V10.417h12.5ZM12.5,17.708a2.083,2.083,0,1,0-2.083-2.083A2.089,2.089,0,0,0,12.5,17.708Z" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

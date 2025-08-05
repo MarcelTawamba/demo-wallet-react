@@ -1,0 +1,115 @@
+{
+  "send": {
+    "condition": {
+      "hideCurrency": [""]
+    },
+    "config": {
+      "confirmMessage": "",
+      "recipient": []
+    }
+  },
+  "buy": {
+    "condition": {
+      "hideCurrency": [],
+      "hideOption": []
+    },
+    "config": {
+    }
+  },
+  "sell": {
+    "condition": {
+      "hideCurrency": []
+    }
+  },
+  "receive": {
+    "condition": {
+      "hideCurrency": [""]
+    },
+    "config": {
+      "initialPage": "qr",
+      "showCryptoDefault": true,
+      "showRecipientButtonsQr": false,
+      "recipient": []
+    }
+  },
+  "deposit": {
+    "condition": {
+      "hideCurrency": [""]
+    },
+    "config": {
+      "hideDepositReference": false,
+      "cryptoBankSupport": []
+    }
+  },
+  "request": {
+    "condition": {
+      "hideCurrency": [""]
+    }
+  },
+  "withdraw": {
+    "condition": {
+      "hideCurrency": [""]
+    },
+    "config": {
+      "pairs": [],
+      "message": "",
+      "confirmMessage": "",
+      "cryptoBankSupport": [],
+      "hideCryptoAccounts": [],
+      "defaultSubtype": "withdraw_manual",
+      "subtypes": [
+        {
+          "id": "withdraw_manual",
+          "label": "withdraw_manual_label",
+          "confirmMessage": "withdraw_manual_confirmation",
+          "successMessage": "withdraw_manual_success",
+          "completeLabel": "withdraw_manual_complete",
+          "pendingLabel": "withdraw_manual_pending",
+          "failedLabel": "withdraw_manual_failed"
+        }
+      ]
+    }
+  },
+  "top_up": {
+    "condition": {
+      "showGroups": ["merchant", "business", "admin", "manager", "trader"],
+      "hide": true,
+      "hideCurrency": [""]
+    },
+    "config": {
+      "recipient": []
+    }
+  },
+  "donate": {
+    "condition": {
+      "hide": true,
+      "hideCurrency": [""]
+    },
+    "config": {
+      "users": []
+    }
+  },
+  "pay": {
+    "condition": {
+      "hide": true,
+      "hideCurrency": [""]
+    }
+  },
+  "card": {
+    "config": {
+      "disableAdd": true
+    },
+    "condition": {
+      "hide": true,
+      "hideCurrency": ["XBT"]
+    }
+  },
+  "prepaid": {
+    "config": {},
+    "label": "Top up",
+    "condition": {
+      "hide": false,
+      "hideCurrency": []
+    }
+  }
+}

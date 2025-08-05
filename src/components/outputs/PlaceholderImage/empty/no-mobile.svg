@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <clipPath id="clip-no-mobile">
+      <rect width="500" height="500"/>
+    </clipPath>
+  </defs>
+  <g id="no-mobile" clip-path="url(#clip-no-mobile)">
+    <g id="Group_45" data-name="Group 45">
+      <g id="Group_44" data-name="Group 44">
+        <path id="Path_76" data-name="Path 76" d="M29,0H173a29,29,0,0,1,29,29V339a29,29,0,0,1-29,29H29A29,29,0,0,1,0,339V29A29,29,0,0,1,29,0Z" transform="translate(149 66)" fill="#a5a5a5"/>
+        <rect id="Rectangle_30" data-name="Rectangle 30" width="187" height="353" rx="22" transform="translate(156 74)" fill="#d5d5d5"/>
+      </g>
+      <rect id="Rectangle_31" data-name="Rectangle 31" width="84" height="18" rx="9" transform="translate(208 66)" fill="#a5a5a5"/>
+    </g>
+  </g>
+</svg>

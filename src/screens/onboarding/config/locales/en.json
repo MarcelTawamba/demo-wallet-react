@@ -1,0 +1,26 @@
+{
+  "individual_onboarding": {
+    "get_started": {
+      "title": "Onboarding progress",
+      "subtitle": "Continue onboarding"
+    },
+    "continue": {
+      "title": "Complete verification",
+      "subtitle": "Tap the banner to complete your onboarding"
+    },
+    "pending": {
+      "title": "Documents pending",
+      "subtitle": "Your onboarding documents are pending review"
+    },
+    "complete": {
+      "title": "Onboarding complete!",
+      "subtitle": "Your identity has been verified!"
+    },
+    "failed": {
+      "title": "Onboarding failed!",
+      "subtitle": "Your information could not be verified"
+    }
+  },
+  "inc_number": "Incorporation number",
+  "vat_number": "VAT number"
+}

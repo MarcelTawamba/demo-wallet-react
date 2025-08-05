@@ -1,0 +1,181 @@
+const exportConfigs = {
+  code: {
+    name: 'code',
+    label: 'variant_code',
+    props: { autoFocus: true },
+  },
+  label: {
+    name: 'label',
+    label: 'variant_label',
+  },
+  active: {
+    name: 'active',
+    label: 'active',
+    variant: 'boolean',
+  },
+  visible: {
+    name: 'visible',
+    label: 'visible',
+    variant: 'boolean',
+  },
+  virtual_format: {
+    name: 'virtual_format',
+    label: 'virtual_format',
+    variant: 'select',
+    options: ['raw', { value: 'qr', label: 'QR' }, 'barcode'],
+  },
+  virtual_redemption: {
+    name: 'virtual_redemption',
+    label: 'virtual_redemption',
+    variant: 'select',
+    options: [{ value: '', label: 'User and admin' }, 'admin'],
+  },
+  virtual_type: {
+    name: 'virtual_type',
+    label: 'virtual_type',
+    variant: 'select',
+    options: ['internal', 'external'],
+  },
+  product_name: {
+    label: 'product_name',
+    name: 'name',
+    validation: { required: true },
+  },
+  product_description: {
+    label: 'product_description',
+    name: 'description',
+    multiline: true,
+    rows: 7,
+    helper: 'max_255_characters',
+    edit: true,
+    validation: { maxLength: 255, required: true },
+  },
+  description: {
+    label: 'description',
+    name: 'description',
+    multiline: true,
+    rows: 7,
+    helper: 'max_255_characters',
+    edit: true,
+    validation: { maxLength: 255, required: true },
+  },
+  short_description: {
+    label: 'short_description',
+    name: 'short_description',
+    edit: true,
+    validation: { required: true },
+  },
+  countries: {
+    label: 'countries',
+    name: 'countries',
+    type: 'country',
+    edit: true,
+  },
+  supplier_account: {
+    label: 'supplier_account',
+    name: 'account',
+    type: 'supplier_account',
+  },
+  bar_code: { label: 'bar_code', name: 'bar_code', edit: true },
+
+  voucher: {
+    label: 'enable_voucher_product',
+    name: 'voucher',
+    edit: true,
+    type: 'switch',
+    info: 'A vouchers product is a virtual voucher that can be redeemed',
+  },
+  categories: {
+    label: 'categories',
+    name: 'categories',
+    edit: true,
+    type: 'categories',
+  },
+  variants: { type: 'variants', name: 'variants' },
+  options: { type: 'options', name: 'options' },
+  images: { label: 'images', name: 'images', type: 'images' },
+  // prices: { label: 'prices', name: 'prices', variant: 'prices', edit: true },
+  enabled: {
+    label: 'enabled',
+    name: 'enabled',
+    type: 'boolean',
+    edit: true,
+    info:
+      'An enabled product will be visible to users in the list of products and allow them to purchase it.',
+  },
+  instant_buy: {
+    label: 'instant_buy',
+    name: 'instant_buy',
+    type: 'boolean',
+    edit: true,
+  },
+  requires_billing_address: {
+    label: 'requires_billing_address',
+    name: 'requires_billing_address',
+    type: 'boolean',
+    edit: true,
+  },
+  requires_shipping_address: {
+    label: 'requires_shipping_address',
+    name: 'requires_shipping_address',
+    type: 'boolean',
+    edit: true,
+  },
+  requires_contact_mobile: {
+    label: 'requires_contact_mobile',
+    name: 'requires_contact_mobile',
+    type: 'boolean',
+    edit: true,
+  },
+  requires_contact_email: {
+    label: 'requires_contact_email',
+    name: 'requires_contact_email',
+    type: 'boolean',
+    edit: true,
+  },
+  metadata: { label: 'metadata', name: 'metadata', type: 'json', edit: true },
+
+  category_name: {
+    label: 'category_name',
+    name: 'name',
+  },
+  is_parent_category: {
+    label: 'parent_category',
+    name: 'is_parent_category',
+    type: 'boolean',
+  },
+  parent_category: { name: 'parent_category', type: 'parent_category' },
+  product: { name: 'product', type: 'product' },
+  voucher_codes: { name: 'voucher_codes', type: 'voucher_codes' },
+  user: { name: 'user', type: 'user' },
+  currency: {
+    name: 'currency',
+    label: 'currency',
+    type: 'select',
+    options: ['USD', 'ZAR', 'XBT'],
+  },
+  products: { name: 'products', type: 'products' },
+  pricing_type: {
+    name: 'pricing_type',
+    label: 'quantity_and_pricing_type',
+    type: 'select',
+    options: ['simple', 'variants'],
+  },
+  tracked: {
+    name: 'tracked',
+    label: 'product_quantity_tracked',
+    type: 'boolean',
+  },
+  quantity: {
+    name: 'quantity',
+    label: 'quantity',
+    type: 'number',
+  },
+  sku: {
+    name: 'barcode',
+    label: 'sku_barcode',
+  },
+  prices: { type: 'prices' },
+};
+
+export default exportConfigs;

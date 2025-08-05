@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="150" viewBox="0 0 150 150">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_590" data-name="Rectangle 590" width="150" height="150" transform="translate(113 96)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_1186" data-name="Rectangle 1186" width="59.406" height="59.406" transform="translate(369.802 259.901)" fill="#fff" stroke="#707070" stroke-width="1.485"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_472" data-name="Mask Group 472" transform="translate(-113 -96)" clip-path="url(#clip-path)">
+    <g id="Group_835" data-name="Group 835" transform="translate(-246.406 -118.604)">
+      <rect id="Rectangle_1183" data-name="Rectangle 1183" width="150" height="100.99" rx="14.851" transform="translate(359.406 239.109)" fill="#e6e6e6"/>
+      <path id="Intersection_2" data-name="Intersection 2" d="M-13560.892,3515.347v-100.99H-13500a14.852,14.852,0,0,1,14.852,14.852V3500.5a14.852,14.852,0,0,1-14.852,14.852Z" transform="translate(13994.555 -3175.248)" fill="#d9d9d9"/>
+      <g id="Mask_Group_471" data-name="Mask Group 471" clip-path="url(#clip-path-2)">
+        <path id="user-solid_1_" data-name="user-solid (1)" d="M25.99,29.7A14.851,14.851,0,1,0,11.139,14.851,14.851,14.851,0,0,0,25.99,29.7Zm10.4,3.713H34.455a20.2,20.2,0,0,1-16.917,0H15.594A15.594,15.594,0,0,0,0,49.01v4.827a5.571,5.571,0,0,0,5.569,5.569H46.411a5.571,5.571,0,0,0,5.569-5.569V49.01A15.594,15.594,0,0,0,36.386,33.416Z" transform="translate(373.515 259.901)" fill="#19d4e3"/>
+      </g>
+      <rect id="Rectangle_1189" data-name="Rectangle 1189" width="29.703" height="8.911" rx="4.455" transform="translate(442.574 302.97)" fill="#434343"/>
+      <rect id="Rectangle_1190" data-name="Rectangle 1190" width="54.95" height="8.911" rx="4.455" transform="translate(442.574 285.149)" fill="#434343"/>
+      <rect id="Rectangle_1191" data-name="Rectangle 1191" width="54.95" height="8.911" rx="4.455" transform="translate(442.574 267.327)" fill="#434343"/>
+    </g>
+  </g>
+</svg>

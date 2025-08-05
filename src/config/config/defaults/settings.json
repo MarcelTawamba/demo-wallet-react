@@ -1,0 +1,15 @@
+{
+  "locales": {
+    "en": {}
+  },
+  "hideCryptoAccounts": false,
+  "hideBankAccounts": false,
+  "hidePrimaryCurrency": false,
+  "hideNotifications": false,
+  "businessGroups": ["admin", "merchant"],
+  "hideSmsMfa": false,
+  "bank": {
+    "hideFields": []
+  },
+  "legal": { "hideFields": [] }
+}

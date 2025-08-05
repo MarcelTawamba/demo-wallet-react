@@ -1,0 +1,18 @@
+{
+  "payments": "Payments",
+  "no_payments_available": "No payments available",
+  "no_items": "No items",
+  "payment_id_header": "Payment #{{paymentId}}",
+  "date_paid": "Date paid",
+  "net": "Net",
+  "payment_method": "Payment method",
+  "invoice": "Invoice",
+  "fee": "Fee",
+  "transaction_id": "Transaction ID",
+  "account_name": "Account name",
+  "account_reference": "Account reference",
+  "order": "Order",
+  "metadata": "Metadata",
+  "overview": "Overview",
+  "connections": "Connections"
+}

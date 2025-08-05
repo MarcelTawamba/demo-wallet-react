@@ -1,0 +1,99 @@
+{
+  "proof_of_identity": {
+    "icon": "perm-contact-calendar",
+    "options": [
+      {
+        "id": "government_id",
+        "label": "Government ID",
+        "icon": "id",
+        "requireBack": true
+      },
+      {
+        "id": "passport",
+        "label": "Passport",
+        "icon": "passport"
+      },
+      {
+        "id": "drivers_license",
+        "label": "Driver's license",
+        "icon": "drivers",
+        "requireBack": true
+      }
+    ]
+  },
+  "proof_of_income": {
+    "icon": "cash",
+    "options": [
+      {
+        "id": "payslip",
+        "label": "payslip",
+        "icon": "monetization"
+      },
+      {
+        "id": "employment_letter",
+        "label": "employment_letter",
+        "icon": "article"
+      },
+      {
+        "id": "financial_statement",
+        "label": "financial_statement",
+        "icon": "article"
+      }
+    ]
+  },
+  "proof_of_address": {
+    "icon": "location-on",
+    "options": [
+      {
+        "id": "utility_bill",
+        "label": "utility_bill",
+        "icon": "receipt-long"
+      },
+      {
+        "id": "bank_statement",
+        "label": "bank_statement",
+        "icon": "AccountBalance"
+      },
+      {
+        "id": "lease_or_rental_agreement",
+        "label": "lease_or_rental_agreement",
+        "icon": "apartment"
+      },
+      {
+        "id": "municipal_rate_and_taxes",
+        "label": "municipal_rate_and_taxes",
+        "icon": "house"
+      },
+      {
+        "id": "mortgage_statement",
+        "label": "mortgage_statement",
+        "icon": "house"
+      },
+      {
+        "id": "telephone",
+        "label": "telephone",
+        "icon": "call"
+      },
+      {
+        "id": "insurance_policy",
+        "label": "insurance_policy",
+        "icon": "insert-drive-file"
+      },
+      {
+        "id": "retail_store",
+        "label": "retail_store",
+        "icon": "store"
+      }
+    ]
+  },
+  "advanced_proof_of_identity": {
+    "icon": "UserBadge",
+    "options": [
+      {
+        "id": "id_confirmation",
+        "label": "id_confirmation",
+        "icon": "perm-contact-calendar"
+      }
+    ]
+  }
+}

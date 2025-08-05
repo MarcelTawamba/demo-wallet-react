@@ -1,0 +1,13 @@
+{
+  "layout": "categories",
+  "currencies": [],
+  "defaultCurrency": "",
+  "sales": {
+    "userGroups": ["merchant", "admin"],
+    "invoiceConfig": { "showDiscount": false, "showTax": false }
+  },
+  "topUpAccount": "",
+  "voucher": {
+    "userGroups": ["merchant", "admin"]
+  }
+}

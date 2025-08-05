@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="47" viewBox="0 0 47 47">
+  <defs>
+    <clipPath id="clipPath">
+      <rect id="Rectangle_445" data-name="Rectangle 445" width="25" height="25" transform="translate(322 54)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="rewards" transform="translate(-311 -43)">
+    <circle id="Ellipse_129" data-name="Ellipse 129" cx="23.5" cy="23.5" r="23.5" transform="translate(311 43)" fill="#5336ff"/>
+    <g id="Mask_Group_235" data-name="Mask Group 235" clipPath="url(#clipPath)">
+      <g id="card_giftcard-24px_1_" data-name="card_giftcard-24px (1)" transform="translate(322 54)">
+        <path id="Path_552" data-name="Path 552" d="M20.833,6.25H18.562a3.118,3.118,0,0,0-5.542-2.76l-.521.7-.521-.708A3.118,3.118,0,0,0,6.437,6.25H4.167A2.067,2.067,0,0,0,2.094,8.333l-.01,11.458a2.076,2.076,0,0,0,2.083,2.083H20.833a2.076,2.076,0,0,0,2.083-2.083V8.333A2.076,2.076,0,0,0,20.833,6.25ZM15.625,4.167a1.042,1.042,0,1,1-1.042,1.042A1.045,1.045,0,0,1,15.625,4.167Zm-6.25,0A1.042,1.042,0,1,1,8.333,5.208,1.045,1.045,0,0,1,9.375,4.167ZM20.833,19.792H4.167V17.708H20.833Zm0-5.208H4.167V8.333H9.458L7.292,11.281,8.979,12.5l2.479-3.375L12.5,7.708l1.042,1.417L16.021,12.5l1.688-1.219L15.542,8.333h5.292Z" fill="#fff"/>
+        <path id="Path_553" data-name="Path 553" d="M0,0H25V25H0Z" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

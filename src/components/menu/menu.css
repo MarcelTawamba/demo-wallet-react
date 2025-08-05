@@ -1,0 +1,38 @@
+.home-menu {
+  padding: 8px;
+  border-radius: 10px;
+  background-color: #fff !important;
+  overflow: hidden;
+  position: fixed;
+  top: 60;
+}
+
+.home-menu-item {
+  height: 28px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  /* padding: 4px; */
+  margin: 4px;
+}
+
+.svg {
+  padding: 4px;
+  align-content: center;
+  justify-content: center;
+  height: 28px;
+  width: 28px;
+}
+
+.label {
+  margin: 4px;
+  /* padding: 4px; */
+  display: flex;
+  /* flex-direction: c; */
+  align-content: center;
+  justify-content: center;
+}
+
+a:link {
+  text-decoration: none;
+}

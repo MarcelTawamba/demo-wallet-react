@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="624" height="191" viewBox="0 0 624 191">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_451" data-name="Rectangle 451" width="339" height="143" transform="translate(-870 3068)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_455" data-name="Rectangle 455" width="339" height="142.301"/>
+    </clipPath>
+  </defs>
+  <g id="netfix" transform="translate(1013 -3044)">
+    <rect id="Rectangle_447" data-name="Rectangle 447" width="624" height="191" rx="29" transform="translate(-1013 3044)" fill="#fff"/>
+    <g id="Mask_Group_239" data-name="Mask Group 239" clip-path="url(#clip-path)">
+      <g id="Canvas" transform="translate(-870 3068.35)" clip-path="url(#clip-path-2)">
+        <rect id="Rectangle_454" data-name="Rectangle 454" width="339" height="142.301" fill="rgba(0,0,0,0)"/>
+        <path id="Netflix_Logo_PMS" d="M35.2,35.028h10.75L60.679,75.864V35.028H71.99V102.68q-6.2.638-12.383,1.355l-13.1-37.629v39.24q-5.666.738-11.311,1.541Zm255.693,70.415-8.269-21.329-8.349,19.348q-5.934-.655-11.889-1.237l14.357-33.277-13.15-33.92h12.237l7.36,18.983,8.19-18.983H303.8L289.066,69.177l14.735,38-.018.007Q297.351,106.269,290.891,105.443ZM82.867,35.029h31.419V46.274H94.178V61.507c4.62-.059,11.188-.126,15.275-.116V72.536c-5.115-.063-10.89.07-15.275.114V89.523q10.025-.788,20.108-1.374V99.3q-15.781.909-31.419,2.334ZM242.636,100.5V35.028h11.311v66.408q-5.648-.5-11.311-.934ZM202.6,98.28V35.022h11.31V87.591q9.727.452,19.4,1.1V99.832Q218.02,98.813,202.6,98.28ZM133.375,46.273H121.537V35.028h34.987V46.273H144.686V98.032q-5.663.148-11.311.358Zm30.4-11.244h31.576V46.274H175.086V60.849h15.332V71.993H175.086V97.724l-11.311,0Z" fill="#d8292f"/>
+      </g>
+    </g>
+  </g>
+</svg>

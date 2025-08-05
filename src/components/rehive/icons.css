@@ -1,0 +1,514 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('./icons.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bitcoin:before {
+  content: '\e961';
+  color: #fff;
+}
+.icon-stellar:before {
+  content: '\e963';
+  color: #fff;
+}
+.icon-support:before {
+  content: '\e95f';
+}
+.icon-chat:before {
+  content: '\e960';
+}
+.icon-help:before {
+  content: '\e95e';
+}
+.icon-business:before {
+  content: '\e968';
+}
+.icon-payouts:before {
+  content: '\e95b';
+}
+.icon-receipt:before {
+  content: '\e958';
+}
+.icon-preview:before {
+  content: '\e958';
+}
+.icon-plus:before {
+  content: '\ea0a';
+}
+.icon-minus:before {
+  content: '\ea0b';
+}
+.icon-print:before {
+  content: '\e957';
+}
+.icon-customers:before {
+  content: '\e94d';
+}
+.icon-delete:before {
+  content: '\e94e';
+}
+.icon-developers:before {
+  content: '\e94f';
+}
+.icon-edit:before {
+  content: '\e950';
+}
+.icon-export:before {
+  content: '\e951';
+}
+.icon-invoices:before {
+  content: '\e952';
+}
+.icon-payments:before {
+  content: '\e953';
+}
+.icon-search:before {
+  content: '\e954';
+}
+.icon-membership:before {
+  content: '\e956';
+}
+.icon-pin:before {
+  content: '\e94c';
+}
+.icon-limits:before {
+  content: '\e971';
+}
+.icon-admin:before {
+  content: '\e970';
+}
+.icon-Android:before {
+  content: '\e96c';
+}
+.icon-Apple:before {
+  content: '\e96d';
+}
+.icon-Desktop:before {
+  content: '\e96e';
+}
+.icon-Laptop:before {
+  content: '\e96f';
+}
+.icon-voucher:before {
+  content: '\e96b';
+}
+.icon-bank:before {
+  content: '\e945';
+}
+.icon-card:before {
+  content: '\e946';
+}
+.icon-test:before {
+  content: '\e94b';
+}
+.icon-vial:before {
+  content: '\e949';
+}
+.icon-burger:before {
+  content: '\e94a';
+}
+.icon-edit:before {
+  content: '\e92e';
+}
+.icon-settings:before {
+  content: '\e92f';
+}
+.icon-settings-filled:before {
+  content: '\e92f';
+}
+.icon-swap_vert:before {
+  content: '\e930';
+}
+.icon-verified:before {
+  content: '\e931';
+}
+.icon-download:before {
+  content: '\e932';
+}
+.icon-star:before {
+  content: '\e933';
+}
+.icon-refresh:before {
+  content: '\e934';
+}
+.icon-sort:before {
+  content: '\e935';
+}
+.icon-photo_camera:before {
+  content: '\e936';
+}
+.icon-notifications:before {
+  content: '\e937';
+}
+.icon-filter:before {
+  content: '\e938';
+}
+.icon-copy:before {
+  content: '\e939';
+}
+.icon-exit:before {
+  content: '\e93a';
+}
+.icon-eye:before {
+  content: '\e93b';
+}
+.icon-close:before {
+  content: '\e93c';
+}
+.icon-delete:before {
+  content: '\e93d';
+}
+.icon-done:before {
+  content: '\e93e';
+}
+.icon-call_made:before {
+  content: '\e93f';
+}
+.icon-arrow_back_ios:before {
+  content: '\e940';
+}
+.icon-alert:before {
+  content: '\e941';
+}
+.icon-information:before {
+  content: '\e942';
+}
+.icon-star:before {
+  content: '\e943';
+}
+.icon-voucher:before {
+  content: '\e943';
+}
+.icon-success:before {
+  content: '\e944';
+}
+.icon-merchant:before {
+  content: '\e968';
+}
+.icon-supplier:before {
+  content: '\e901';
+}
+.icon-user:before {
+  content: '\e969';
+}
+.icon-customer:before {
+  content: '\e969';
+}
+.icon-home-outline:before {
+  content: '\e903';
+}
+.icon-home:before {
+  content: '\e904';
+}
+.icon-home-filled:before {
+  content: '\e904';
+}
+.icon-get_started:before {
+  content: '\e904';
+}
+.icon-product-filled:before {
+  content: '\e905';
+}
+.icon-profile:before {
+  content: '\e906';
+}
+.icon-profile-filled:before {
+  content: '\e907';
+}
+.icon-rewards-filled:before {
+  content: '\e908';
+}
+.icon-rewards:before {
+  content: '\e909';
+}
+.icon-reward:before {
+  content: '\e909';
+}
+.icon-wallet-filled:before {
+  content: '\e90a';
+}
+.icon-wallet:before {
+  content: '\e90b';
+}
+.icon-product:before {
+  content: '\e90c';
+}
+.icon-general:before {
+  content: '\e90d';
+}
+.icon-hot-wallet:before {
+  content: '\e90e';
+}
+.icon-spending:before {
+  content: '\e90f';
+}
+.icon-warm-storage:before {
+  content: '\e910';
+}
+.icon-cold-storage:before {
+  content: '\e911';
+}
+.icon-investments:before {
+  content: '\e912';
+}
+.icon-lending:before {
+  content: '\e913';
+}
+.icon-operational:before {
+  content: '\e914';
+}
+.icon-rewards-copy:before {
+  content: '\e915';
+}
+.icon-sales:before {
+  content: '\e916';
+}
+.icon-savings:before {
+  content: '\e917';
+}
+.icon-share:before {
+  content: '\e918';
+}
+.icon-receive:before {
+  content: '\e919';
+}
+.icon-received:before {
+  content: '\e919';
+}
+.icon-rewards-birthday:before {
+  content: '\e91a';
+}
+.icon-rewards-recurring:before {
+  content: '\e91b';
+}
+.icon-rewards:before {
+  content: '\e91c';
+}
+.icon-sale:before {
+  content: '\e91d';
+}
+.icon-scan:before {
+  content: '\e91e';
+}
+.icon-send:before {
+  content: '\e91f';
+}
+.icon-sent:before {
+  content: '\e91f';
+}
+.icon-transfer:before {
+  content: '\e920';
+}
+.icon-withdraw:before {
+  content: '\e921';
+}
+.icon-deposit:before {
+  content: '\e922';
+}
+.icon-exchange:before {
+  content: '\e923';
+}
+.icon-failed:before {
+  content: '\e924';
+}
+.icon-fund:before {
+  content: '\e925';
+}
+.icon-history:before {
+  content: '\e926';
+}
+.icon-mass-send:before {
+  content: '\e927';
+}
+.icon-more:before {
+  content: '\e928';
+}
+.icon-pending:before {
+  content: '\e929';
+}
+.icon-purchase:before {
+  content: '\e92a';
+}
+.icon-receive-payment:before {
+  content: '\e92b';
+}
+.icon-product-outline:before {
+  content: '\e92c';
+}
+.icon-add:before {
+  content: '\e92d';
+}
+.icon-new:before {
+  content: '\e92d';
+}
+.icon-cross:before {
+  content: '\ea0f';
+}
+.icon-gavel:before {
+  content: '\ec63';
+}
+.icon-amex .path1:before {
+  content: '\e947';
+  color: rgb(1, 111, 208);
+}
+.icon-amex .path2:before {
+  content: '\e94c';
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-amex .path3:before {
+  content: '\e94d';
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-amex .path4:before {
+  content: '\e94e';
+  margin-left: -1em;
+  color: rgb(1, 111, 208);
+}
+.icon-amex .path5:before {
+  content: '\e94f';
+  margin-left: -1em;
+  color: rgb(1, 111, 208);
+}
+.icon-amex .path6:before {
+  content: '\e950';
+  margin-left: -1em;
+  color: rgb(1, 111, 208);
+}
+.icon-amex .path7:before {
+  content: '\e951';
+  margin-left: -1em;
+  color: rgb(1, 111, 208);
+}
+.icon-amex .path8:before {
+  content: '\e952';
+  margin-left: -1em;
+  color: rgb(1, 111, 208);
+}
+.icon-amex .path9:before {
+  content: '\e953';
+  margin-left: -1em;
+  color: rgb(1, 111, 208);
+}
+.icon-amex .path10:before {
+  content: '\e954';
+  margin-left: -1em;
+  color: rgb(1, 111, 208);
+}
+.icon-amex .path11:before {
+  content: '\e955';
+  margin-left: -1em;
+  color: rgb(1, 111, 208);
+}
+.icon-amex .path12:before {
+  content: '\e956';
+  margin-left: -1em;
+  color: rgb(1, 111, 208);
+}
+.icon-amex .path13:before {
+  content: '\e957';
+  margin-left: -1em;
+  color: rgb(1, 111, 208);
+}
+.icon-amex .path14:before {
+  content: '\e958';
+  margin-left: -1em;
+  color: rgb(1, 111, 208);
+}
+.icon-amex .path15:before {
+  content: '\e959';
+  margin-left: -1em;
+  color: rgb(1, 111, 208);
+}
+.icon-amex .path16:before {
+  content: '\e95a';
+  margin-left: -1em;
+  color: rgb(1, 111, 208);
+}
+.icon-amex .path17:before {
+  content: '\e95b';
+  margin-left: -1em;
+  color: rgb(1, 111, 208);
+}
+.icon-amex .path18:before {
+  content: '\e95c';
+  margin-left: -1em;
+  color: rgb(1, 111, 208);
+}
+.icon-mastercard .path1:before {
+  content: '\e95d';
+  color: rgb(255, 255, 255);
+}
+.icon-mastercard .path2:before {
+  content: '\e95e';
+  margin-left: -1em;
+  color: rgb(255, 95, 0);
+}
+.icon-mastercard .path3:before {
+  content: '\e95f';
+  margin-left: -1em;
+  color: rgb(235, 0, 27);
+}
+.icon-mastercard .path4:before {
+  content: '\e960';
+  margin-left: -1em;
+  color: rgb(247, 158, 27);
+}
+.icon-mastercard .path5:before {
+  content: '\e961';
+  margin-left: -1em;
+  color: rgb(247, 158, 27);
+}
+.icon-visa .path1:before {
+  content: '\e962';
+  color: rgb(255, 255, 255);
+}
+.icon-visa .path2:before {
+  content: '\e963';
+  margin-left: -1em;
+  color: rgb(0, 87, 159);
+}
+.icon-visa .path3:before {
+  content: '\e964';
+  margin-left: -1em;
+  color: rgb(0, 87, 159);
+}
+.icon-visa .path4:before {
+  content: '\e965';
+  margin-left: -1em;
+  color: rgb(0, 87, 159);
+}
+.icon-visa .path5:before {
+  content: '\e966';
+  margin-left: -1em;
+  color: rgb(0, 87, 159);
+}
+.icon-visa .path6:before {
+  content: '\e967';
+  margin-left: -1em;
+  color: rgb(250, 166, 26);
+}
+
+.icon-groups:before {
+  content: '\e965';
+}
