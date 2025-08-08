@@ -23,7 +23,6 @@ import { initWithoutToken } from 'util/rehive';
 import AppContainer from './components/app';
 import { ConfigurationProvider } from 'components/contexts/ConfigurationContext';
 import { LanguageProvider } from 'components/contexts/LanguageContext';
-import { LanguageProvider as LanguageProviderI18n } from 'util/i18n';
 import { ToastProvider } from 'components/contexts/ToastContext';
 import locales from 'config/locales';
 import 'util/i18n';
@@ -65,15 +64,13 @@ const App = () => {
             <CssBaseline />
             <ErrorBoundary>
               <ConfigurationProvider>
-                <LanguageProviderI18n>
-                  <LanguageProvider value={locales}>
-                    <ToastProvider>
-                      <Router>
-                        <AppContainer />
-                      </Router>
-                    </ToastProvider>
-                  </LanguageProvider>
-                </LanguageProviderI18n>
+                <LanguageProvider>
+                  <ToastProvider>
+                    <Router>
+                      <AppContainer />
+                    </Router>
+                  </ToastProvider>
+                </LanguageProvider>
               </ConfigurationProvider>
             </ErrorBoundary>
             <ReactQueryDevtools initialIsOpen={false} />

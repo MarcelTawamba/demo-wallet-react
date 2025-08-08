@@ -1,5 +1,4 @@
-import en from './home.en';
+import en from './home.en.json';
+import fr from './home.fr.json';
 
-const enConfig = { en };
-
-export default enConfig;
+export default { en, fr };

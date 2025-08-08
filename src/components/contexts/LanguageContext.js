@@ -1,27 +1,24 @@
-import React, { useContext } from 'react';
-import locales from 'config/locales';
-import { merge } from 'lodash';
+import React, { createContext, useContext, useState } from 'react';
+import i18n from 'util/i18n';
 
-const selectedLanguage = 'en';
-const LanguageContext = React.createContext(locales);
+const LanguageContext = createContext({
+  language: 'en',
+  setLanguage: () => {},
+});
 
-function LanguageProvider({ children, localLocales, configLocales }) {
-  const mergedLocales = merge(merge(locales, localLocales), configLocales);
-  const value = mergedLocales?.[selectedLanguage];
-
+export function LanguageProvider({ children }) {
+  const [language, setLanguageState] = useState('en');
+  const setLanguage = lang => {
+    setLanguageState(lang);
+    i18n.changeLanguage(lang);
+  };
   return (
-    <LanguageContext.Provider value={value}>
+    <LanguageContext.Provider value={{ language, setLanguage }}>
       {children}
     </LanguageContext.Provider>
   );
 }
 
-function useLanguage() {
-  const lang = useContext(LanguageContext);
-  if (lang === undefined) {
-    throw new Error('useLanguage must be used within a LanguageProvider');
-  }
-  return { lang };
+export function useLanguage() {
+  return useContext(LanguageContext);
 }
-
-export { LanguageContext, LanguageProvider, useLanguage };

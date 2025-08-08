@@ -1,5 +1,6 @@
 import React from 'react';
-import { LanguageContext } from 'components/contexts/LanguageContext';
+import { useLanguage } from 'components/contexts/LanguageContext';
+import locales from './config/locales';
 import Screen from 'components/layouts/Screen';
 import { useSelector } from 'react-redux';
 import { configFAQsSelector, configHelpSelector } from 'redux/rehive/selectors';
@@ -10,15 +11,20 @@ export default function Help(props) {
   const faqConfig = useSelector(configFAQsSelector);
   const company = useSelector(currentCompanySelector);
   const helpConfig = useSelector(configHelpSelector);
+  const { language } = useLanguage();
 
   const data = {
     faqConfig,
     company,
+    locales: locales[language] || locales['en'],
   };
 
   return (
-    <LanguageContext.Provider value={helpConfig.locales?.en}>
-      <Screen screenConfig={screenConfig} reduxContext={data} {...props} />
-    </LanguageContext.Provider>
+    <Screen
+      key={language}
+      screenConfig={screenConfig}
+      reduxContext={data}
+      {...props}
+    />
   );
 }

@@ -97,19 +97,50 @@ function mergeDeep(target, ...sources) {
   return mergeDeep(target, ...sources);
 }
 
+// --- Add below this line ---
+// --- French sync logic ---
+function mergeTranslations(en, fr) {
+  if (typeof en !== 'object' || en === null) return fr || en;
+  if (Array.isArray(en)) return fr || en;
+  const result = {};
+  for (const key of Object.keys(en)) {
+    if (typeof en[key] === 'object' && en[key] !== null && !Array.isArray(en[key])) {
+      result[key] = mergeTranslations(en[key], fr ? fr[key] : undefined);
+    } else {
+      result[key] = (fr && fr[key] !== undefined) ? fr[key] : en[key];
+    }
+  }
+  return result;
+}
+
+function syncFrenchTranslations() {
+  const enPath = path.join(__dirname, 'public', 'language-en.json');
+  const frPath = path.join(__dirname, 'public', 'language-fr.json');
+  if (!fs.existsSync(enPath) || !fs.existsSync(frPath)) {
+    console.log('Missing language-en.json or language-fr.json');
+    return;
+  }
+  const en = JSON.parse(fs.readFileSync(enPath, 'utf8'));
+  const fr = JSON.parse(fs.readFileSync(frPath, 'utf8'));
+  const merged = mergeTranslations(en, fr);
+  fs.writeFileSync(frPath, JSON.stringify(merged, null, 2));
+  console.log('language-fr.json synchronized with language-en.json');
+}
+
 // Main execution
 console.log('Starting language sync process...');
 
+// Run French sync after English sync
 fromDir('./src', '.en.json')
   .then(webJson => {
-    console.log('Web wallet language files processed.');
     finalJsonData = {};
     fromDir('../wallet-react-native/src', '.en.json')
       .then(mobileJson => {
-        console.log('Mobile wallet language files processed.');
         const jsonData = mergeDeep(mobileJson, webJson);
         fs.writeFileSync('./public/language-en.json', JSON.stringify(jsonData, null, 2));
         console.log('---Completed: language-en.json has been generated in the public folder---');
+        // --- Sync French ---
+        syncFrenchTranslations();
       })
       .catch(error => console.log('ERROR IN MOBILE WALLET ->', error));
   })

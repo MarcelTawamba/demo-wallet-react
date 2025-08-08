@@ -8,9 +8,7 @@ import { Box } from '@material-ui/core';
 import FilterBar from 'components/filter/FilterBar';
 import IconLabelButton from 'components/inputs/IconLabelButton';
 import HeaderAction from './HeaderAction';
-// import Text from 'components/outputs/Text';
-// import Tabs from 'components/outputsTabs';
-// import ActionList from 'components/lists/ActionList';
+import LanguageSwitcher from 'components/layout/LanguageSwitcher';
 
 const useStyles = makeStyles(theme => ({
   container: {
@@ -110,6 +108,7 @@ export default function CategoriesHeader(props) {
 
   return (
     <div className={classes.container}>
+      <LanguageSwitcher />
       <div className={classes.tabs}>
         <Tabs
           history={history}

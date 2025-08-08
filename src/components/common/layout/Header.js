@@ -3,7 +3,7 @@ import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import { withStyles } from '@material-ui/core/styles';
-import { View } from './View';
+import LanguageSwitcher from 'components/layout/LanguageSwitcher';
 
 const styles = theme => ({
   layout: {
@@ -26,10 +26,14 @@ const Header = ({ children, classes }) => {
   return (
     <AppBar position="sticky" color="inherit">
       <div styles={classes.layout}>
-        <Toolbar>{children}</Toolbar>
-        {/* <View h={24} w={'100%'} aI={'center'}>
-          Hello world
-        </View> */}
+        <Toolbar style={{ minHeight: 40, height: 40, paddingTop: 0, paddingBottom: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <div style={{ display: 'flex', alignItems: 'center', width: '100%', justifyContent: 'space-between' }}>
+            {/* Left: Logo */}
+            {children}
+            {/* Right: Language Switcher */}
+            <LanguageSwitcher positionFixed={false} />
+          </div>
+        </Toolbar>
       </div>
     </AppBar>
   );

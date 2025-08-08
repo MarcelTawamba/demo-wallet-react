@@ -1,5 +1,6 @@
-import en from './help.en';
+import en from './help.en.json';
+import fr from './help.fr.json';
 
-const enConfig = { en };
+const locales = { en, fr };
 
-export default enConfig;
+export default locales;
