@@ -23,6 +23,7 @@ import { useMediaQuery, useTheme } from '@material-ui/core';
 import Scrollbars from 'react-custom-scrollbars-better';
 import { checkBusinessGroup } from 'util/business';
 import { useBusiness } from 'contexts';
+import useI18Language from 'hooks/useI18Language';
 
 function hasBusiness(props) {
   return (
@@ -197,6 +198,8 @@ export default function AppMenu(props) {
     loading,
   } = props;
 
+  const { getI18Translation } = useI18Language();
+
   let services = {};
   let { config: client } = useConfiguration();
 
@@ -275,7 +278,8 @@ export default function AppMenu(props) {
       <div className={classes.container}>
         {isAdmin && (
           <Tooltip
-            title={`You're logged in as an admin to this wallet. Note that the configuration for other user groups might be different. If you're testing the end-user experience it is recommended to create a new user account by registering as a user.`}>
+            title={getI18Translation('app_menu_admin_tooltip')}
+          >
             <div className={classes.group}>
               <Icon icon={'admin'} size={14} color="primary" />
               <Text
@@ -283,7 +287,8 @@ export default function AppMenu(props) {
                 width="auto"
                 myColor="primaryContrast"
                 style={{ fontWeight: 400, fontSize: 12 }}
-                variant={'subtitle1'}>
+                variant={'subtitle1'}
+              >
                 {label ? label.toUpperCase() : name.toUpperCase()}
               </Text>
             </div>
@@ -308,7 +313,7 @@ export default function AppMenu(props) {
               ) : isVerified ? (
                 <Menu>
                   {filteredConfig.map(item => (
-                    <MenuItem key={item.id} item={item} {...menuProps} />
+                    <MenuItem key={item.id} item={{...item, label: getI18Translation(item.label) || item.id}} {...menuProps} />
                   ))}
                 </Menu>
               ) : (
@@ -328,7 +333,7 @@ export default function AppMenu(props) {
             </div>
             <Menu>
               <MenuItem
-                item={{ id: 'help', label: 'help', icon: 'help' }}
+                item={{ id: 'help', label: getI18Translation('help'), icon: 'help' }}
                 {...menuProps}
               />
               {(client.apple_app_store_url ||
@@ -336,7 +341,7 @@ export default function AppMenu(props) {
                 <MenuItem
                   item={{
                     id: 'mobile',
-                    label: 'get_mobile_app',
+                    label: getI18Translation('get_mobile_app'),
                     icon: 'download',
                   }}
                   {...menuProps}
@@ -346,7 +351,7 @@ export default function AppMenu(props) {
                 <UserAvatar menuProps={menuProps} logoutUser={logoutUser} />
               ) : (
                 <MenuItem
-                  item={{ id: 'logout', label: 'log_out', icon: 'exit' }}
+                  item={{ id: 'logout', label: getI18Translation('log_out'), icon: 'exit' }}
                   to="/"
                   onClick={logoutUser}
                 />

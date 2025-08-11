@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import CombinedOnboarding from './pages';
-import { LanguageContext } from 'components/contexts/LanguageContext';
+import { LanguageProvider } from 'components/contexts/LanguageContext';
 import { authUserSelector, currentCompanyServicesSelector } from 'redux/auth/selectors';
 import { configOnboardingSelector } from 'redux/rehive/selectors';
 import { useSelector } from 'react-redux';
@@ -46,8 +46,7 @@ export default function Onboarding(props) {
   }
 
   return (
-    <LanguageContext.Provider
-      value={{ ...(lang?.en ?? {}), ...(onboardingConfig.locales?.en ?? {}) }}>
+    <LanguageProvider>
       {isUserOnboarding ? (
         <CombinedOnboarding
           {...props}
@@ -61,6 +60,6 @@ export default function Onboarding(props) {
           setIsUserOnboarding={setIsUserOnboarding}
         />
       )}
-    </LanguageContext.Provider>
+    </LanguageProvider>
   );
 }

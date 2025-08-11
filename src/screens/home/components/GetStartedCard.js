@@ -378,6 +378,9 @@ export default function GetStartedCard(props) {
                 variant="body2"
                 style={{ marginBottom: 8 }}
                 id="get_started_follow_step"
+                values={{
+                  company: { name: company?.name },
+                }}
               />
             </View>
           </View>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { useConfiguration } from 'components/contexts/ConfigurationContext';
 // import PageTitle from 'components/layout/page/PageTitle';
@@ -10,6 +11,7 @@ import Text from 'components/outputs/Text';
 export default function AboutPage(props) {
   const { context, history } = props;
   const { company } = context;
+  const { t } = useTranslation('common');
 
   let { config: client } = useConfiguration();
 
@@ -48,7 +50,7 @@ export default function AboutPage(props) {
   // if (country) {
   outputs.push({
     id: 'country',
-    label: 'country',
+    label: t('country'),
     value: country,
     placeholderId: 'not_yet_provided',
     placeholder: 'Not yet provided',
@@ -58,7 +60,7 @@ export default function AboutPage(props) {
   // if (support_email) {
   outputs.push({
     id: 'support_email',
-    label: 'Support email',
+    label: t('support_email'),
     value: support_email,
     fullLink: support_email ? `mailto:${support_email}` : '',
     placeholderId: 'not_yet_provided',
@@ -69,7 +71,7 @@ export default function AboutPage(props) {
   // if (support_link) {
   outputs.push({
     id: 'support_link',
-    label: 'Support website',
+    label: t('support_website'),
     value: support_website,
     link: support_website,
     placeholderId: 'not_yet_provided',
@@ -79,7 +81,7 @@ export default function AboutPage(props) {
   let buttons = [
     {
       id: 'privacy_policy',
-      label: 'Privacy policy',
+      label: t('privacy_policy'),
       link: privacy_policy_url ? privacy_policy_url : client.privacy_policy_url,
       variant: 'link',
       color: 'primary',
@@ -87,7 +89,7 @@ export default function AboutPage(props) {
     },
     {
       id: 'terms_of_use',
-      label: 'Terms of use',
+      label: t('terms_of_use'),
       link: terms_and_conditions_url
         ? terms_and_conditions_url
         : client.terms_and_conditions_url,
@@ -110,7 +112,7 @@ export default function AboutPage(props) {
             href={button.link}
             variant={button.variant}
             newTab>
-            <Text id={button.id} variant="s2" color="primary" opacity={0.8} />
+            <Text tx={button.id} variant="s2" color="primary" opacity={0.8} />
           </Button>
         ))}
       </View>

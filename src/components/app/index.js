@@ -39,6 +39,7 @@ import { fetchData } from 'redux/rehive/actions';
 
 /* components */
 import Head from './Head';
+import AppHeader from './AppHeader';
 import {
   initWithoutToken,
   initWithToken,
@@ -271,6 +272,7 @@ const AppContainer = props => {
         <ThemeProvider value={{ colors, design }}>
           <ErrorBoundary>
             <Head />
+            <AppHeader {...props} />
             {client?.status === 'error' || clientError ? (
               <ConfigurationError />
             ) : loading ? (

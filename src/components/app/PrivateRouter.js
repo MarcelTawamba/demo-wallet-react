@@ -11,6 +11,7 @@ import {
 } from 'screens/accounts/redux/selectors';
 
 import { useConfiguration } from 'components/contexts/ConfigurationContext';
+import { useLanguage } from 'components/contexts/LanguageContext';
 
 import Drawer from 'components/layout/Drawer';
 // import Toast from 'components/outputs/Toast';
@@ -410,7 +411,7 @@ const PrivateRouter = props => {
             <PointOfSalePage />
           </Suspense>
         ) : isBridgeTerms ? (
-          <Suspense fallback={<SplashScreen />}>
+          <Suspense fallback={< SplashScreen />}>
             <ErrorBoundary>
               <BridgeTermsContainer businessServiceSettings={businessServiceSettings} />
             </ErrorBoundary>
@@ -434,88 +435,33 @@ const PrivateRouter = props => {
               {showThrottle ? (
                 <ThrottlingScreen setShowThrottle={setShowThrottle} />
               ) : (
-                <React.Fragment>
-                  <Switch>
-                    <Suspense fallback={<SplashScreen />}>
-                      <Route component={SettingsContainer} path="/settings/" />
-                      <Route component={MobileDownloadPage} path="/mobile/" />
-                      <Route component={ProfileContainer} path="/profile/" />
-
-                      <>
-                        <Route
-                          path="/home/"
-                          render={routeProps => (
-                            <HomeContainer
-                              {...routeProps}
-                              businessServiceSettings={businessServiceSettings}
-                            />
-                          )}
-                        />
-                        <Route
-                          path="/accounts/"
-                          render={routeProps => (
-                            <AccountsContainer
-                              {...routeProps}
-                              businessServiceSettings={businessServiceSettings}
-                            />
-                          )}
-                        />
-                        <Route
-                          component={RewardsAdminContainer}
-                          path="/rewards_admin/"
-                        />
-
-                        <Route
-                          component={ProductsAdminContainer}
-                          path="/products_admin/"
-                        />
-                        <Route component={RewardsContainer} path="/rewards/" />
-                        <Route
-                          component={PaymentsContainer}
-                          path="/payments/"
-                        />
-                        <Route
-                          component={ProductsContainer}
-                          path="/products/"
-                        />
-                        <Route component={OrdersContainer} path="/orders/" />
-                        <Route
-                          component={InvoicesContainer}
-                          path="/invoices/"
-                        />
-                        <Route
-                          component={CustomersContainer}
-                          path="/customers/"
-                        />
-                        <Route component={HelpContainer} path="/help/" />
-                        <Route
-                          component={DevelopersContainer}
-                          path="/developers/"
-                        />
-                        <Route
-                          component={BusinessSettingsContainer}
-                          path="/business/"
-                          exact
-                        />
-                        <Route
-                          component={ReportingContainer}
-                          path="/reporting/"
-                        />
-                        <Route component={PayoutsContainer} path="/payouts/" />
-                        <Route component={KYCContainer} path="/kyc/" />
-                        <Route
-                          component={GetStartedContainer}
-                          path="/get_started/"
-                        />
-                        <Route component={TeamContainer} path="/team/" />
-                        <Route component={HomeContainer} path="/" exact />
-                        {/* <Route component={AccountsContainer} path="/" exact /> */}
-                      </>
-                    </Suspense>
-                  </Switch>
-
-                  {/* <Toast /> */}
-                </React.Fragment>
+                <Switch>
+                  <Suspense fallback={<SplashScreen />}>
+                    <Route path="/settings/" render={routeProps => <SettingsContainer {...routeProps} />} />
+                    <Route path="/mobile/" render={routeProps => <MobileDownloadPage {...routeProps} />} />
+                    <Route path="/profile/" render={routeProps => <ProfileContainer {...routeProps} />} />
+                    <Route path="/home/" render={routeProps => <HomeContainer {...routeProps} businessServiceSettings={businessServiceSettings} />} />
+                    <Route path="/accounts/" render={routeProps => <AccountsContainer {...routeProps} businessServiceSettings={businessServiceSettings} />} />
+                    <Route path="/rewards_admin/" render={routeProps => <RewardsAdminContainer {...routeProps} />} />
+                    <Route path="/products_admin/" render={routeProps => <ProductsAdminContainer {...routeProps} />} />
+                    <Route path="/rewards/" render={routeProps => <RewardsContainer {...routeProps} />} />
+                    <Route path="/payments/" render={routeProps => <PaymentsContainer {...routeProps} />} />
+                    <Route path="/products/" render={routeProps => <ProductsContainer {...routeProps} />} />
+                    <Route path="/orders/" render={routeProps => <OrdersContainer {...routeProps} />} />
+                    <Route path="/invoices/" render={routeProps => <InvoicesContainer {...routeProps} />} />
+                    <Route path="/customers/" render={routeProps => <CustomersContainer {...routeProps} />} />
+                    <Route path="/help/" render={routeProps => <HelpContainer {...routeProps} />} />
+                    <Route path="/developers/" render={routeProps => <DevelopersContainer {...routeProps} />} />
+                    <Route path="/business/" exact render={routeProps => <BusinessSettingsContainer {...routeProps} />} />
+                    <Route path="/reporting/" render={routeProps => <ReportingContainer {...routeProps} />} />
+                    <Route path="/payouts/" render={routeProps => <PayoutsContainer {...routeProps} />} />
+                    <Route path="/kyc/" render={routeProps => <KYCContainer {...routeProps} />} />
+                    <Route path="/get_started/" render={routeProps => <GetStartedContainer {...routeProps} />} />
+                    <Route path="/team/" render={routeProps => <TeamContainer {...routeProps} />} />
+                    <Route path="/" exact render={routeProps => <HomeContainer {...routeProps} />} />
+                    {/* <Route component={AccountsContainer} path="/" exact /> */}
+                  </Suspense>
+                </Switch>
               )}
             </ErrorBoundary>
           </Drawer>

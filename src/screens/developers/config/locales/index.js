@@ -1,5 +1,6 @@
-import en from './developers.en';
+import en from './en';
+import fr from './fr';
 
-const enConfig = { en };
+const locales = { en, fr };
 
-export default enConfig;
+export default locales;

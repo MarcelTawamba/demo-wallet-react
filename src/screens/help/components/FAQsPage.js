@@ -41,7 +41,7 @@ export default function FAQsPage(props) {
   function renderSummary({ question, index }) {
     return (
       <View flex fD={'row'} aI={'center'} jC={'space-between'} w={'100%'}>
-        <Text bold>{question['en'].question}</Text>
+        <Text bold>{question?.[appLanguageKey]?.question}</Text>
         <Icon
           icon={expanded === index ? 'remove' : 'add'}
           circled={false}
@@ -58,7 +58,7 @@ export default function FAQsPage(props) {
           expanded={expanded === index}
           onChange={() => setExpanded(expanded === index ? -1 : index)}
           summary={renderSummary({ question, index })}
-          detail={<Text myColor={'grey4'}>{question['en'].answer}</Text>}
+          detail={<Text myColor={'grey4'}>{question?.[appLanguageKey]?.answer}</Text>}
         />
       ))
     ) : (
@@ -169,7 +169,7 @@ function CategoryDetails({ category, setSelectedCategory }) {
           style={{ color: '#797979', marginLeft: -6 }}
           fontSize="small"
         />
-        <Text id="back" s={14} c="primary" style={{ marginLeft: 4 }} />
+        <Text tx="common.back" s={14} c="primary" style={{ marginLeft: 4 }} />
       </View>
       <Text bold style={{ marginTop: 16, marginBottom: 16 }}>
         {category.name}
