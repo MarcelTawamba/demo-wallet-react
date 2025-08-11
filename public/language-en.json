@@ -181,7 +181,8 @@
     "pos": "Point of sale",
     "get_mobile_app": "Get mobile app",
     "log_out": "Log out",
-    "greet_user": "Hello {{name}}!"
+    "greet_user": "Hello {{name}}!",
+    "get_started": "Get started"
   },
   "accounts": {
     "scan": "Scan",
@@ -1752,7 +1753,6 @@
     "add_token_password_description": "The password for the account you used to log in to the web application."
   },
   "getStarted": {
-    "get_started": "Get started",
     "howto_guides": "How-to guides",
     "created_short": "Created",
     "url": "URL"

@@ -45,5 +45,12 @@
   "get_started_add_invoice_title": "Envoyer une facture",
   "get_started_add_invoice_description": "Créez une facture et testez le flux de paiement",
   "scan_to_pay": "Scanner pour payer",
-  "get_started_scan_description": "Passez en mode point de vente pour afficher le QR de votre magasin"
+  "get_started_scan_description": "Passez en mode point de vente pour afficher le QR de votre magasin",
+  "get_started": "Commencer",
+  "add_funds": "Ajouter des fonds",
+  "transactions": "Transactions",
+  "no_transactions": "Aucune transaction",
+  "about_us": "À propos de nous",
+  "frequently_asked_questions": "Questions fréquemment posées",
+  "contact_support": "Contacter le support"
 }
